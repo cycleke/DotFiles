@@ -1,0 +1,44 @@
+[global_config]
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#161719"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#d0d0d0"
+    font = Go Mono for Powerline 10
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[Atom]]
+    background_color = "#161719"
+    cursor_color = "#d0d0d0"
+    foreground_color = "#c5c8c6"
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+  [[One dark]]
+    background_color = "#1e2127"
+    cursor_color = "#676c76"
+    foreground_color = "#5c6370"
+    palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
+    scroll_on_keystroke = False
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
