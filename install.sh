@@ -8,7 +8,7 @@ sudo pacman -S python ipython
 sudo pacman -S php curl jdk10-openjdk icedtea-web
 sudo pacman -S zsh terminator yay git
 sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-rime
-sudo pacman -S emacs vim firefox-nightly-zh-cn stardict wps-office
+sudo pacman -S emacs vim firefox-nightly-zh-cn sdcv wps-office
 
 yay -Syyu
 yay -S ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete lantern-bin
