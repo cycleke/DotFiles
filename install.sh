@@ -7,7 +7,8 @@ sudo pacman -S clang lldb
 sudo pacman -S python ipython 
 sudo pacman -S php curl jdk10-openjdk icedtea-web
 sudo pacman -S zsh terminator yay git
-sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-rime
+#sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-rime
+sudo pacman -S ibus-rime ibus-table ibus-qt
 sudo pacman -S emacs vim firefox-nightly-zh-cn sdcv wps-office
 
 yay -Syyu
@@ -19,6 +20,7 @@ yay -S p7zip
 
 sudo pip install pip -U
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple -user
 
 git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
 git clone git@github.com:cycleke/Spacemacs-config.git ~/.spacemacs.d
