@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ys"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -69,6 +69,7 @@ plugins=(
   extract
   web-search
   archlinux
+  catimg
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,16 +103,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export http_proxy=
-export HTTP_PROXY=
-export https_proxy=
-export HTTPS_PROXY=
-export socket_proxy=
+export DEFAULT_USER="cycleke"
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
+export http_proxy=
+export HTTP_PROXY=
+export https_proxy=
+export HTTPS_PROXY=
+export socket_proxy=
 alias proxy="
 export http_proxy=127.0.0.1:42571
 export HTTP_PROXY=127.0.0.1:42571
@@ -130,3 +132,5 @@ export socket_proxy=
 alias py="python"
 alias ipy="ipython"
 alias emacs="emacs -nw"
+alias setgpuon="sudo tee /proc/acpi/bbswitch <<<ON"
+alias setgpuoff="sudo tee /proc/acpi/bbswitch <<<OFF"
