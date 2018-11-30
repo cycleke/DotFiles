@@ -1,5 +1,6 @@
 sudo cp ./pacman.conf /etc/
 sudo cp ./mirrorlist /etc/pacman.d/
+
 sudo pacman -Syy
 sudo pacman -S archlinuxcn-keyring archlinux-keyring
 sudo pacman -S gcc g++ gdb cmake 
@@ -9,7 +10,8 @@ sudo pacman -S php curl jdk10-openjdk icedtea-web
 sudo pacman -S zsh terminator yay git
 #sudo pacman -S fcitx fcitx-im fcitx-configtool fcitx-rime
 sudo pacman -S ibus-rime ibus-table ibus-qt
-sudo pacman -S emacs vim firefox-nightly-zh-cn sdcv wps-office
+sudo pacman -S emacs vim firefox-nightly-zh-cn
+sudo pacman -S wps-office goldendict
 
 yay -Syyu
 yay -S ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete lantern-bin
@@ -30,16 +32,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
 bash ~/Downloads/fonts/install.sh
 
-wget http://www.dictinfo.com/stardict/wikt-en-ALL-2018-05-15.7z
-mkdir -p ./stardict/dic/wikt-en-ALL-2018-05-15
-7za x ./stardict/dic/wikt-en-ALL-2018-05-15/wikt-en-ALL-2018-05-15.7z -r
-
 cp ./zshrc ~/.zshrc
 cp ./bashrc ~/.bashrc
 cp ./xprofile ~/.xprofile
 cp ./gitconfig ~/.gitconfig
 cp ./web-search.plugin.zsh ~/.oh-my-zsh/plugins/web-search/
 cp -r ./config/ ~/.config/
-cp -r ./stardict ~/.stardict
-
-git clone git@github.com:d12frosted/elpa-mirror.git ~/elpa-mirror
+bash ./elpa-rsync.sh
