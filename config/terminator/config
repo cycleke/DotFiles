@@ -13,13 +13,13 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#161719"
+    background_color = "#dfdbc3"
     background_darkness = 0.9
     background_type = transparent
-    cursor_color = "#d0d0d0"
-    font = Go Mono for Powerline 10
-    foreground_color = "#c5c8c6"
-    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    cursor_color = "#73635a"
+    font = GoMono Nerd Font 10
+    foreground_color = "#3b2322"
+    palette = "#000000:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#cccccc:#808080:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#ffffff"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
@@ -57,6 +57,18 @@
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
+  [[Novel]]
+    background_color = "#dfdbc3"
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#73635a"
+    font = GoMono Nerd Font 10
+    foreground_color = "#3b2322"
+    palette = "#000000:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#cccccc:#808080:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#ffffff"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
   [[One dark]]
     background_color = "#1e2127"
     cursor_color = "#676c76"
