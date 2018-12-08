@@ -1,8 +1,6 @@
 export LC_ALL=zh_CN.UTF-8
-export XIM=ibus
-export XIM_PROGRAM=ibus
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
-export XMODIFIERS="@im=ibus"
-#eval `dbus-launch --sh-syntax --exit-with-session`
-#exec ibus &
+export XIM=fcitx
+export XIM_PROGRAM=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
