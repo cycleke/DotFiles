@@ -10,7 +10,7 @@ yay -S php curl jdk10-openjdk icedtea-web
 yay -S terminator zsh git
 yay -S fcitx fcitx-im fcitx-configtool fcitx-rime
 #yay -S ibus-rime ibus-table ibus-qt
-yay -S emacs vim firefox-nightly-en-us code
+yay -S emacs vim firefox-developer-edition code
 yay -S wps-office goldendict p7zip
 
 yay -S ttf-dejavu wqy-zenhei wqy-microhei lantern-bin
