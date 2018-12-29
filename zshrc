@@ -64,12 +64,9 @@ ZSH_THEME="kennethreitz"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  wd
-  z
   extract
   web-search
   archlinux
-  catimg
   battery
 )
 
