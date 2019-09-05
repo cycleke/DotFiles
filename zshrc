@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/cycleke/.oh-my-zsh"
@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="kennethreitz"
+ZSH_THEME=random
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -36,7 +36,7 @@ ZSH_THEME="kennethreitz"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -66,8 +66,14 @@ plugins=(
   git
   extract
   web-search
+  my-search
   archlinux
   battery
+  catimg
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-completions
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,29 +113,26 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
-export http_proxy=
-export HTTP_PROXY=
-export https_proxy=
-export HTTPS_PROXY=
-export socket_proxy=
+export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
+
 alias proxy="
-export http_proxy=127.0.0.1:42571
-export HTTP_PROXY=127.0.0.1:42571
-export https_proxy=127.0.0.1:42571
-export HTTPS_PROXY=127.0.0.1:42571
-export socket_proxy=127.0.0.1:46133
+export socket_proxy=127.0.0.1:1080
 "
 
 alias unproxy="
-export http_proxy=
-export HTTP_PROXY=
-export https_proxy=
-export HTTPS_PROXY=
 export socket_proxy=
 "
-alias py="python"
+alias py="python3"
 alias ipy="ipython"
 alias emacs="emacs -nw"
-alias vim="nvim"
+#alias vim="nvim"
+alias rm='echo "It is actually running trash-put."; trash-put'
 alias setgpuon="sudo tee /proc/acpi/bbswitch <<<ON"
 alias setgpuoff="sudo tee /proc/acpi/bbswitch <<<OFF"
+
+[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+source /usr/share/nvm/nvm.sh --no-use
+source /usr/share/nvm/bash_completion
+source /usr/share/nvm/install-nvm-exec
+
+export PATH=/opt/anaconda/bin:/home/cycleke/.nvm/versions/node/v11.13.0/bin:/home/cycleke/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/cycleke/.local/bin

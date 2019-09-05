@@ -1,5 +1,6 @@
 [global_config]
-  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_hide_sizetext = True
 [keybindings]
 [layouts]
   [[default]]
@@ -11,70 +12,47 @@
       parent = ""
       type = Window
 [plugins]
+  [[InactivityWatch]]
+    inactive_period = 30.0
+    watch_interval = 1000
 [profiles]
   [[default]]
-    background_color = "#dfdbc3"
-    background_darkness = 0.9
-    background_type = transparent
-    cursor_color = "#73635a"
-    font = GoMono Nerd Font 10
-    foreground_color = "#3b2322"
-    palette = "#000000:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#cccccc:#808080:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#ffffff"
+    background_color = "#eaeaea"
+    cursor_color = "#16afca"
+    font = Monaco 11
+    foreground_color = "#232322"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
   [[3024 Night]]
     background_color = "#090300"
-    background_darkness = 0.9
-    background_type = transparent
     cursor_color = "#a5a2a2"
-    font = Go Mono for Powerline 10
     foreground_color = "#a5a2a2"
     palette = "#090300:#db2d20:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#e8bbd0:#3a3432:#4a4543:#807d7c:#d6d5d4:#cdab53:#f7f7f7"
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
   [[Aci]]
     background_color = "#0d1926"
-    background_darkness = 0.9
-    background_type = transparent
     cursor_color = "#c4e9ff"
-    font = Go Mono for Powerline 10
     foreground_color = "#b4e1fd"
     palette = "#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6:#363636:#ff0883:#83ff08:#ff8308:#0883ff:#8308ff:#08ff83:#b6b6b6"
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
   [[Atom]]
     background_color = "#161719"
     cursor_color = "#d0d0d0"
     foreground_color = "#c5c8c6"
     palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
-    scroll_on_keystroke = False
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False
+  [[Material]]
+    background_color = "#eaeaea"
+    cursor_color = "#16afca"
+    foreground_color = "#232322"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
   [[Novel]]
     background_color = "#dfdbc3"
-    background_darkness = 0.9
-    background_type = transparent
     cursor_color = "#73635a"
-    font = GoMono Nerd Font 10
     foreground_color = "#3b2322"
     palette = "#000000:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#cccccc:#808080:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#ffffff"
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
   [[One dark]]
     background_color = "#1e2127"
     cursor_color = "#676c76"
     foreground_color = "#5c6370"
     palette = "#000000:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2bf:#5c6370:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#fffefe"
-    scroll_on_keystroke = False
-    scrollback_infinite = True
-    scrollbar_position = hidden
-    show_titlebar = False

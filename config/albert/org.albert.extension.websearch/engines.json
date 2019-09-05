@@ -1,0 +1,56 @@
+[
+    {
+        "iconPath": ":duckduckgo",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "iconPath": ":google",
+        "name": "Google",
+        "trigger": "gg ",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": ":amazon",
+        "name": "Amazon",
+        "trigger": "ama ",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "iconPath": ":ebay",
+        "name": "Ebay",
+        "trigger": "eb ",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": "/home/cycleke/.config/albert/org.albert.extension.websearch/{f7b83c74-b1b5-42a5-8f82-9a23f1960f60}.",
+        "name": "Bing",
+        "trigger": "bi",
+        "url": "https://cn.bing.com/search?q=%s"
+    },
+    {
+        "iconPath": "/home/cycleke/.config/albert/org.albert.extension.websearch/{2e097712-005a-4dc5-98b8-739c5f766104}.",
+        "name": "Mijisou",
+        "trigger": "mj",
+        "url": "https://mijisou.com/?q=%s"
+    }
+]

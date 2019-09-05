@@ -1,0 +1,16 @@
+gg
+G
+j/k/h/l
+J/K  翻一页
+Tab 打开/关闭index（一般是目录）
+o 打开另外的文件
+f Follow a link on the page
+m 标记位置（用过vim的都知道的。。）
+' 跳转到标记位置
+[0-9]+G 到指定页
+a 放大页面到合适大小
+s 放大页面到窗口宽度
+F5 Toggle fullscreen mode
+^n Toggle statusbar visibility 
+^m Toggle inputbar visibility
+^q 退出

@@ -84,7 +84,7 @@
 # No
 # All
 # PerProgram
-#ShareStateAmongWindow=No
+ShareStateAmongWindow=All
 # 默认输入法状态
 # Available Value:
 # Inactive
@@ -131,7 +131,7 @@ CandidateWordNumber=7
 # 显示输入速度
 # Available Value:
 # True False
-#ShowInputSpeed=False
+ShowInputSpeed=True
 # 显示版本
 # Available Value:
 # True False

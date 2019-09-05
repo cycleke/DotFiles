@@ -1,0 +1,14 @@
+#/usr/bin/bash
+
+while true; do
+  python gen_data.py
+  ./E < input.txt > output.txt
+ ./E_r <input.txt > ans.txt
+  if diff output.txt ans.txt; then
+    printf AC
+  else
+    echo WA
+    exit 0
+  fi
+done
+

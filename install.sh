@@ -1,38 +1,47 @@
-#sudo cp ./pacman.conf /etc/
-#sudo cp ./mirrorlist /etc/pacman.d/
+#!/usr/bin/bash
 
-sudo pacman -Syy
+sudo echo '\n[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
+
+sudo pacman-mirrors -c China -m rank
+sudo pacman -Syu
 sudo pacman -S archlinuxcn-keyring archlinux-keyring yay
 
 yay -Syyu
-yay -S gcc gdb cmake clang lldb python ipython 
-yay -S php curl jdk10-openjdk icedtea-web
-yay -S terminator zsh git
+yay -S gcc gdb g++ cmake clang lldb llvm python ipython anaconda php curl jdk10-openjdk icedtea-web
+yay -S terminator zsh git cheat htop v2ray
+yay -S emacs vim vscodium-bin sublime-text-dev
 yay -S fcitx fcitx-im fcitx-configtool fcitx-rime
-#yay -S ibus-rime ibus-table ibus-qt
-yay -S emacs vim firefox-developer-edition code
-yay -S wps-office goldendict p7zip
+yay -S wps-office firefox chromium keepass
+yay -S texlive-most texlive-lang
+yay -S p7zip zip unzip rar unrar
 
-yay -S ttf-dejavu wqy-zenhei wqy-microhei lantern-bin
-yay -S pycharm-community-edition intellij-idea-community-edition anaconda
+yay -S ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete
+yay -S otf-san-francisco otf-san-francisco-pro ttf-monaco
+yay -S ccls dotnet-sdk
 
-sudo pip install pip -U
-sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple -user
-
-curl -sLf https://spacevim.org/install.sh | bash
-git clone -b develop https://github.com/hlissner/doom-emacs ~/.emacs.d
-git clone https://github.com/cycleke/doom-config.git ~/.doom.d
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple --user
+pip install infi.docopt-completion --user
 
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
 bash ~/Downloads/fonts/install.sh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-cp ./bashrc ~/.bashrc
-cp ./zshrc ~/.zshrc
+git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
+git clone https://github.com/cycleke/Spacemacs-config ~/.spacemacs.d
+
+cp zshrc ~/.zshrc
+cp vimrc ~/.vimrc
+cp xprofile ~/.xprofile
 cp ./gitconfig ~/.gitconfig
-cp ./web-search.plugin.zsh ~/.oh-my-zsh/plugins/web-search
-cp ./xprofile ~/.xprofile
-cp -r ./config/* ~/.config/
-bash ./elpa-rsync.sh
+
+cp -r cheat ~/.cheat
+cp -r bin/* ~/.local/bin/
+cp -r config/* ~/.config/
+
+mkdir ~/Softwares
+cd ~/Softwares
+git clone https://github.com/Microsoft/python-language-server.git
+cd python-language-server/src/LanguageServer/Impl
+dotnet build -c Release
+dotnet publish -c Release -r linux-x64
