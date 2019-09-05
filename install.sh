@@ -17,6 +17,7 @@ yay -S p7zip zip unzip rar unrar
 
 yay -S ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete
 yay -S otf-san-francisco otf-san-francisco-pro ttf-monaco
+yay -S clion pycharm-professional intellij-idea-community-edition
 yay -S ccls dotnet-sdk
 
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple --user
