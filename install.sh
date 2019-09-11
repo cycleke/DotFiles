@@ -40,6 +40,9 @@ cp -r cheat ~/.cheat
 cp -r bin/* ~/.local/bin/
 cp -r config/* ~/.config/
 
+cp -r i3/ ~/.i3/
+cp i3status.conf ~/.i3status.conf
+
 mkdir ~/Softwares
 cd ~/Softwares
 git clone https://github.com/Microsoft/python-language-server.git
