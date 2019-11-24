@@ -66,7 +66,6 @@ plugins=(
   git
   extract
   web-search
-  my-search
   archlinux
   battery
   catimg
@@ -116,7 +115,7 @@ export XMODIFIERS="@im=fcitx"
 export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
 alias proxy="
-export socket_proxy=127.0.0.1:1080
+export socket_proxy=127.0.0.1:2000
 "
 
 alias unproxy="
@@ -125,6 +124,7 @@ export socket_proxy=
 alias py="python3"
 alias ipy="ipython"
 alias emacs="emacs -nw"
+alias emc="emacsclient"
 #alias vim="nvim"
 alias rm='echo "It is actually running trash-put."; trash-put'
 alias setgpuon="sudo tee /proc/acpi/bbswitch <<<ON"
@@ -135,4 +135,4 @@ source /usr/share/nvm/nvm.sh --no-use
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
-export PATH=/opt/anaconda/bin:/home/cycleke/.nvm/versions/node/v11.13.0/bin:/home/cycleke/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/cycleke/.local/bin
+export PATH=$PATH:/home/cycleke/.dotnet/tools:/opt/anaconda/bin:/home/cycleke/.nvm/versions/node/v11.13.0/bin:/home/cycleke/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/cycleke/.local/bin:/home/cycleke/.npm-global/bin

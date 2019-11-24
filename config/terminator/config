@@ -17,11 +17,11 @@
     watch_interval = 1000
 [profiles]
   [[default]]
-    background_color = "#eaeaea"
-    cursor_color = "#16afca"
-    font = Monaco 11
-    foreground_color = "#232322"
-    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+    background_color = "#dfdbc3"
+    cursor_color = "#73635a"
+    foreground_color = "#3b2322"
+    palette = "#000000:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#cccccc:#808080:#cc0000:#009600:#d06b00:#0000cc:#cc00cc:#0087cc:#ffffff"
+    font = Monaco 12
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False

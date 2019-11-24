@@ -3,45 +3,39 @@
 sudo echo '\n[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
 
 sudo pacman-mirrors -c China -m rank
-sudo pacman -Syu
-sudo pacman -S archlinuxcn-keyring archlinux-keyring yay
+sudo pacman -Syyu -noconfirm archlinuxcn-keyring archlinux-keyring yay
 
 yay -Syyu
-yay -S gcc gdb g++ cmake clang lldb llvm python ipython anaconda php curl jdk10-openjdk icedtea-web
-yay -S terminator zsh git cheat htop v2ray
-yay -S emacs vim vscodium-bin sublime-text-dev
-yay -S fcitx fcitx-im fcitx-configtool fcitx-rime
-yay -S wps-office firefox chromium keepass
-yay -S texlive-most texlive-lang
-yay -S p7zip zip unzip rar unrar
-
-yay -S ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete
-yay -S otf-san-francisco otf-san-francisco-pro ttf-monaco
-yay -S clion pycharm-professional intellij-idea-community-edition
-yay -S ccls dotnet-sdk
+yay -S --noconfirm \
+    gcc gdb cmake clang lldb llvm stack \
+    python ipython anaconda php curl jdk10-openjdk icedtea-web \
+    terminator zsh git htop v2ray qv2ray \
+    emacs gvim vscodium-bin sublime-text-dev \
+    fcitx fcitx-im fcitx-configtool fcitx-rime \
+    wps-office firefox chromium keepass \
+    texlive-most texlive-lang \
+    p7zip zip unzip rar unrar \
+    ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete \
+    otf-san-francisco otf-san-francisco-pro ttf-monaco \
+    clion pycharm-professional intellij-idea-community-edition \
+    ccls dotnet-sdk-preview dotnet-runtime-preview dotnet-host-preview \
+    ripgrep loc
 
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple --user
-pip install infi.docopt-completion --user
 
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
 bash ~/Downloads/fonts/install.sh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-git clone -b develop https://github.com/syl20bnr/spacemacs ~/.emacs.d
-git clone https://github.com/cycleke/Spacemacs-config ~/.spacemacs.d
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 cp zshrc ~/.zshrc
 cp vimrc ~/.vimrc
 cp xprofile ~/.xprofile
 cp ./gitconfig ~/.gitconfig
-
-cp -r cheat ~/.cheat
-cp -r bin/* ~/.local/bin/
 cp -r config/* ~/.config/
-
-cp -r i3/ ~/.i3/
-cp i3status.conf ~/.i3status.conf
 
 mkdir ~/Softwares
 cd ~/Softwares
