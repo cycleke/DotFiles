@@ -1,8 +1,8 @@
 __build_info:
-  rime_version: 1.4.0
+  rime_version: 1.5.3
   timestamps:
     default: 1526362370
-    default.custom: 0
+    default.custom: 1575041908
     stroke.custom: 0
     stroke.schema: 1526362370
 abc_segmentor:

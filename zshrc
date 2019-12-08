@@ -2,7 +2,7 @@
 PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/cycleke/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -115,7 +115,8 @@ export XMODIFIERS="@im=fcitx"
 export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
 alias proxy="
-export socket_proxy=127.0.0.1:2000
+export socket_proxy=127.0.0.1:1080
+export http_proxy=127.0.0.1:1081
 "
 
 alias unproxy="
@@ -135,4 +136,5 @@ source /usr/share/nvm/nvm.sh --no-use
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
-export PATH=$PATH:/home/cycleke/.dotnet/tools:/opt/anaconda/bin:/home/cycleke/.nvm/versions/node/v11.13.0/bin:/home/cycleke/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/cycleke/.local/bin:/home/cycleke/.npm-global/bin
+export PATH=$PATH:$HOME/.dotnet/tools:/opt/anaconda/bin:$HOME/.nvm/versions/node/v11.13.0/bin:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.local/bin:$HOME/.npm-global/bin
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"

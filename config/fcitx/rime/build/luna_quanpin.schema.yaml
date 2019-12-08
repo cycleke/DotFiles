@@ -1,8 +1,8 @@
 __build_info:
-  rime_version: 1.4.0
+  rime_version: 1.5.3
   timestamps:
     default: 1526362370
-    default.custom: 0
+    default.custom: 1575041908
     luna_quanpin.custom: 0
     luna_quanpin.schema: 1526362370
 engine:
