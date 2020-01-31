@@ -8,7 +8,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border normal
 default_floating_border normal
 
 # Hide borders
@@ -33,7 +33,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun -show combi -modi combi"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -215,6 +215,9 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
+for_window [instance=”TIM.exe”] floating enable
+for_window [instance=”TIM.exe”] border none
+
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -288,9 +291,13 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 exec --no-startup-id fcitx
-exec --no-startup-id variety
+exec --no-startup-id qv2ray
 exec --no-startup-id fluxgui
-exec --no-startup-id /opt/Qv2ray/bin/Qv2ray
+exec --no-startup-id nutstore
+exec --no-startup-id xinput set-prop 'ETD2303:00 04F3:3083 Touchpad' "libinput Natural Scrolling Enabled" 1
+# exec --no-startup-id nohup /usr/lib/gsd-xsettings > /dev/null 2>&1 &
+# exec --no-startup-id mkfifo /tmp/wallpaper; xwinwrap -fs -nf -ov -- mplayer -shuffle -slave -nosound -input file=/tmp/wallpaper -loop 0 -wid WID -nolirc `find ~/wallpapers -type f` &
+# exec --no-startup-id mkfifo /tmp/wallpaper; xwinwrap -fs -nf -ov -- mplayer -slave -input file=/tmp/wallpaper -loop 0 -wid WID -nolirc wallpapers/8s1nok6ep6r1f65i34p2.hd.mp4
 
 # Color palette used for the alacritty ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -298,7 +305,7 @@ exec --no-startup-id /opt/Qv2ray/bin/Qv2ray
 # Change the variable name at the place you want to match the color
 # of your alacritty like this:
 # [example]
-# If you want your bar to have the same background color as your 
+# If you want your bar to have the same background color as your
 # terminal background change the line 362 from:
 # background #14191D
 # to:
@@ -364,7 +371,7 @@ bindsym $mod+m bar mode toggle
   # client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   # $i3-theme-window
 
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
 #############################
@@ -383,7 +390,7 @@ gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 

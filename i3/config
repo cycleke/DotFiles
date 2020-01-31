@@ -8,7 +8,7 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border normal
 default_floating_border normal
 
 # Hide borders
@@ -33,7 +33,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency
+bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun -show combi -modi combi"
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -215,6 +215,9 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
+for_window [instance=”TIM.exe”] floating enable
+for_window [instance=”TIM.exe”] border none
+
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -288,9 +291,13 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 exec --no-startup-id fcitx
-exec --no-startup-id variety
+exec --no-startup-id qv2ray
 exec --no-startup-id fluxgui
-exec --no-startup-id /opt/Qv2ray/bin/Qv2ray
+exec --no-startup-id nutstore
+exec --no-startup-id xinput set-prop 'ETD2303:00 04F3:3083 Touchpad' "libinput Natural Scrolling Enabled" 1
+# exec --no-startup-id nohup /usr/lib/gsd-xsettings > /dev/null 2>&1 &
+# exec --no-startup-id mkfifo /tmp/wallpaper; xwinwrap -fs -nf -ov -- mplayer -shuffle -slave -nosound -input file=/tmp/wallpaper -loop 0 -wid WID -nolirc `find ~/wallpapers -type f` &
+# exec --no-startup-id mkfifo /tmp/wallpaper; xwinwrap -fs -nf -ov -- mplayer -slave -input file=/tmp/wallpaper -loop 0 -wid WID -nolirc wallpapers/8s1nok6ep6r1f65i34p2.hd.mp4
 
 # Color palette used for the alacritty ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -298,7 +305,7 @@ exec --no-startup-id /opt/Qv2ray/bin/Qv2ray
 # Change the variable name at the place you want to match the color
 # of your alacritty like this:
 # [example]
-# If you want your bar to have the same background color as your 
+# If you want your bar to have the same background color as your
 # terminal background change the line 362 from:
 # background #14191D
 # to:
@@ -351,36 +358,13 @@ bar {
 #        urgent_workspace   #16a085 #FDF6E3 #E5201D
 #    }
 colors {
- 	# status
-	separator $blue
- 	background $baseA3
-	statusline $baseB2
-
- 	###################
-	# solarized (clean)
-	###################
- 	# workclass 			border  backgr. text
- 	#focused_workspace		$green  $green  $baseA3
- 	#active_workspace		$cyan   $cyan   $baseA2
- 	#inactive_workspace		$baseA2 $baseA2 $baseB1
- 	#urgent_workspace		$orange $orange $baseB3
- 	#urgent_workspace		$yellow $yellow $baseB3
-
-	#####################
-	# solarized (borders)
-	#####################
-	# workclass 			border backgr. text
-	focused_workspace 		$baseB0 $green  $baseA3
-	active_workspace 		$baseB0 $cyan   $baseA2
-	inactive_workspace 		$baseB0 $baseA2 $baseB1
-	#urgent_workspace 		$baseB0 $orange $baseB3
-	urgent_workspace 		$baseB0 $orange $baseB3
-
-	###############################
-	# disable cyan? (clean/borders)
-	###############################
-	#active_workspace		$custom $custom $baseB2
-	#active_workspace 		$baseB0 $custom $baseB2
+    background #D6CEC8
+    statusline #000000
+    separator #D6CEC8
+    focused_workspace #2E5492 #2E5492 #ffffff
+    active_workspace #555555 #555555 #D4CFB4
+    inactive_workspace #949494 #949494 #D4CFB4
+    urgent_workspace   #2E5492 #2E5492 #ffffff
 }
 }
 
@@ -393,58 +377,17 @@ bindsym $mod+m bar mode toggle
   # client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
   # client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
   # client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-# solarized accents
-set $yellow	#b58900
-set $orange	#cb4b16
-set $red	#dc322f
-set $magenta	#d33682
-set $violet	#6c71c4
-set $blue	#268bd2
-set $cyan	#2aa198
-set $green	#859900
-
-# solarized light
-set $baseA3 #fdf6e3
-set $baseA2 #eee8d5
-set $baseA1 #93a1a1
-set $baseA0 #839496
-set $baseB0 #657b83
-set $baseB1 #586e75
-set $baseB2 #073642
-set $baseB3 #002b36
-set $custom #e1cab3
+# class                 border  backgr. text    indicator
+client.focused          #949494 #2E5492 #ffffff #08226C
+client.focused_inactive #949494 #848484 #D4CFB4 #292d2e
+client.unfocused        #949494 #848484 #D4CFB4 #292d2e
+client.urgent           #949494 #900000 #ffffff #A65900
 
 # $i3-background
-exec_always --no-startup-id xsetroot -solid '$baseA2'
-
-###################
-# solarized (clean)
-###################
-# clientclass 			border  backgr. text 	indicator
-client.focused 			$green	$green	$baseB3 $blue
-client.focused_inactive		$cyan	$cyan	$baseB2 $violet
-client.unfocused  		$baseA2 $baseA2 $baseB1 $baseA1
-#client.urgent 	 		$orange $orange $baseB3 $red
-client.urgent 	 		$yellow $yellow $baseB3 $orange
-
-####################
-# solarized (borders)
-####################
-# clientclass			border  backgr. text 	indicator
-client.focused    		$baseB0	$green	$baseB3 $blue
-client.focused_inactive 	$baseB0	$cyan	$baseB2 $violet
-client.unfocused  		$baseB0 $baseA2 $baseB1 $baseA1
-#client.urgent     		$baseB0 $orange $baseB3 $red
-client.urgent 	 		$baseB0 $yellow $baseB3 $orange
-
-###############################
-# disable cyan? (clean/borders)
-###############################
-#client.focused_inactive 	$custom $custom $baseB2 $violet
-#client.focused_inactive 	$baseB0 $custom $baseB2 $violet
+exec --no-startup-id xsetroot -solid #3975A9
 
 
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
   client.background       #2B2C2B
 
 #############################
@@ -463,7 +406,7 @@ gaps outer -2
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
-# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 

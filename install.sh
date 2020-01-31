@@ -6,40 +6,63 @@ sudo pacman-mirrors -c China -m rank
 sudo pacman -Syyu archlinuxcn-keyring archlinux-keyring yay
 
 yay -Syyu
-yay -S gcc gdb cmake clang lldb llvm stack \
+yay -S gcc gdb cmake clang lldb llvm ccls stack \
     python ipython anaconda php curl jdk10-openjdk jdk8-openjdk icedtea-web \
-    alacrityy zsh git htop v2ray qv2ray \
+    dotnet-host-bin dotnet-runtime-bin dotnet-sdk-bin \
+    alacrityy zsh tmux rofi git htop qv2ray \
     emacs gvim vscodium-bin sublime-text-dev \
-    fcitx fcitx-im fcitx-configtool fcitx-rime \
-    wps-office firefox chromium keepass \
-    texlive-most texlive-lang \
-    p7zip zip unzip rar unrar \
-    ttf-dejavu wqy-zenhei wqy-microhei nerd-fonts-complete \
-    otf-san-francisco otf-san-francisco-pro ttf-monaco \
     clion pycharm-professional intellij-idea-community-edition \
-    ccls dotnet-sdk-preview dotnet-runtime-preview dotnet-host-preview \
-    ripgrep loc
+    fcitx fcitx-im fcitx-configtool fcitx-rime \
+    wps-office kpcli nutstore texlive-most texlive-lang zathura pdfpc \
+    firefox chromium w3m emacs-w3m-git emacs-elscreen-w3m emacs-elscreen \
+    neomutt fetchmail msmtp procmail telegram-desktop \
+    wqy-zenhei wqy-microhei nerd-fonts-complete ttf-monaco ttf-dejavu \
+    p7zip zip unzip rar ranger ripgrep tldr loc fluxgui obs-studio \
+    youtube-dl mpv mplayer \
+    fbterm-git fbida fbpdf-git fbv fcitx-fbterm
 
+# git config
+cp gitconfig ~/.gitconfig
+
+# install font
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
 bash ~/Downloads/fonts/install.sh
 
+# editor config
+cp vimrc ~/.vimrc
 git clone https://github.com/cycleke/.emacs.d.git ~/.emacs.d
 
+# zsh config
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-cp dmrc ~/.dmrc
 cp zshrc ~/.zshrc
-cp vimrc ~/.vimrc
-cp dmenurc ~/.dmenurc
+
+# tmux config
+git clone https://github.com/gpakosz/.tmux ~/.tmux
+cp tmux.conf.local ~/.tmux.conf.local
+
+# xprofile
 cp xprofile ~/.xprofile
-cp ./gitconfig ~/.gitconfig
+
+# fbterm config
+cp fbtermrc ~/.fbtermrc
+cp fbterm-wallpaper.sh ~/fbterm-wallpaper.sh
+
+# i3 config
+cp -r i3 ~/.i3
 cp i3status.conf ~/.i3status.conf
 
-cp -r ./i3 ~/.i3
+# mail config
+cp -r mutt ~/.mutt
+cp msmtprc ~/.msmtprc
+cp procmailrc ~/.procmailrc
+cp fetchmailrc ~/.fetchmailrc
+
+# other config
 cp -r config/* ~/.config/
 
+# install some softwares
 mkdir ~/Softwares
 
 cd ~/Softwares
@@ -50,4 +73,4 @@ dotnet publish -c Release -r linux-x64
 
 cd ~/Softwares
 git clone https://github.com/okraits/j4-make-config.git
-j4-make-config/j4-make-config -r solarized_light
+j4-make-config/j4-make-config -r wc8

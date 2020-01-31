@@ -1,0 +1,47 @@
+# vim: filetype=neomuttrc
+
+set realname = "Goo Lian"
+set from = "cycleke@gmail.com"
+set mbox_type = "Maildir"
+set spoolfile = "~/Mail/gmail"
+set folder = "~/Mail"
+set record = "+sent"
+set postponed = "+postponed"
+set editor="emacsclient"
+set sendmail = "/usr/bin/msmtp"
+mailboxes ! +gmail +hotmail
+
+set date_format="%y/%m/%d %I:%M%p"
+set index_format="%2C %Z [%d] %-30.30F (%-4.4c) %s"
+
+# Sidebar mappings
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_short_path = yes
+set sidebar_next_new_wrap = yes
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/? %?S?%S?'
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cj sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager \Cp sidebar-prev-new
+bind index,pager \Cn sidebar-next-new
+bind index,pager B sidebar-toggle-visible
+
+auto_view text/html
+auto_view application/pgp-encrypted
+alternative_order text/plain text/enriched text/html
+set move = no
+set quit=ask-yes
+set ascii_chars=yes
+set fast_reply
+set use_from = yes
+set envelope_from = "yes"
+set sort = threads
+set sort_browser = reverse-date
+set sort_aux = 'reverse-date-received'
+
+source ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
+
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+macro index,pager G "<shell-escape> fetchmail -vk<enter>"
