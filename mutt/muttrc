@@ -1,7 +1,7 @@
 # vim: filetype=neomuttrc
 
-set realname = "Goo Lian"
-set from = "cycleke@gmail.com"
+set realname = "XXX"
+set from = "XXX@gmail.com"
 set mbox_type = "Maildir"
 set spoolfile = "~/Mail/gmail"
 set folder = "~/Mail"
@@ -34,14 +34,40 @@ alternative_order text/plain text/enriched text/html
 set move = no
 set quit=ask-yes
 set ascii_chars=yes
+set mime_forward = yes
 set fast_reply
+set fcc_attach
+set include
+set forward_format = "Fwd: %s"
+set forward_quote
 set use_from = yes
-set envelope_from = "yes"
 set sort = threads
 set sort_browser = reverse-date
 set sort_aux = 'reverse-date-received'
 
 source ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+
+bind index j next-entry
+bind index k previous-entry
+bind attach <return> view-mailcap
+bind attach l view-mailcap
+bind editor <space> noop
+bind pager,attach h exit
+bind pager j next-line
+bind pager k previous-line
+bind pager l view-attachments
+bind index D delete-message
+bind index U undelete-message
+bind index L limit
+bind index h noop
+bind index l display-message
+bind index <space> tag-entry
+#bind browser h goto-parent
+macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
 
 macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
 macro index,pager G "<shell-escape> fetchmail -vk<enter>"

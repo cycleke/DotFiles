@@ -17,8 +17,8 @@ yay -S gcc gdb cmake clang lldb llvm ccls stack \
     firefox chromium w3m emacs-w3m-git emacs-elscreen-w3m emacs-elscreen \
     neomutt fetchmail msmtp procmail telegram-desktop \
     wqy-zenhei wqy-microhei nerd-fonts-complete ttf-monaco ttf-dejavu \
-    p7zip zip unzip rar ranger ripgrep tldr loc fluxgui obs-studio \
-    youtube-dl mpv mplayer \
+    ark p7zip zip unzip rar ranger ripgrep tldr loc fluxgui \
+    youtube-dl mpv mplayer obs-studio \
     fbterm-git fbida fbpdf-git fbv fcitx-fbterm
 
 # git config
@@ -55,6 +55,7 @@ cp i3status.conf ~/.i3status.conf
 
 # mail config
 cp -r mutt ~/.mutt
+cp mailcap ~/.mailcap
 cp msmtprc ~/.msmtprc
 cp procmailrc ~/.procmailrc
 cp fetchmailrc ~/.fetchmailrc

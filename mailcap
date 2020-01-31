@@ -1,0 +1,80 @@
+text/html; firefox %s;
+text/html; w3m -dump -T text/html %s; needsterminal; copiousoutput;
+text/plain; $EDITOR %s; copiousoutput;
+# text/plain; charset=ascii less; needsterminal;
+
+image/*; feh %s; copiousoutput;
+audio/*; setsid mpv %s &; copiousoutput;
+video/*; setsid mpv %s &; copiousoutput;
+
+application/ms-tnef; mutt_bgrun tnef -w %s;
+application/octet-stream; less; needsterminal;
+application/pdf; zathura %s; copiousoutput;
+application/postscript;	zathura %s; copiousoutput
+application/pgp-encrypted; gpg -d '%s'; copiousoutput;
+# WPS
+application/msword;             wps %s; copiousoutput;
+application/vnd.msword;         wps %s; copiousoutput;
+application/excel;              wps %s; copiousoutput;
+application/msexcel;            wps %s; copiousoutput;
+application/vnd.ms-excel;       wps %s; copiousoutput;
+application/x-excel;            wps %s; copiousoutput;
+application/x-msexcel;          wps %s; copiousoutput;
+application/vnd.ms-powerpoint;  wps %s; copiousoutput;
+application/x-mspowerpoint;     wps %s; copiousoutput;
+application/ppt;                wps %s; copiousoutput;
+application/rtf;		            wps %s; copiousoutput;
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; wps '%s'; nametemplate=%s.xlsx;
+# Archive Managers 
+application/zip;                ark %s; copiousoutput;
+application/x-rar;              ark %s; copiousoutput;
+application/x-7z-compressed;    ark '%s'; test=test -n "$DISPLAY";
+application/x-7z-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-ace;              ark '%s'; test=test -n "$DISPLAY" -a -x unace
+application/x-alz;              ark '%s'; test=test -n "$DISPLAY" -a -x unalz
+application/x-ar;               ark '%s'; test=test -n "$DISPLAY" -a -x ar
+application/x-arj;              ark '%s'; test=test -n "$DISPLAY"
+application/x-bzip;             ark '%s'; test=test -n "$DISPLAY"
+application/x-bzip1;            ark '%s'; test=test -n "$DISPLAY"
+application/x-bzip-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-bzip1-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-cabinet;          ark '%s'; test=test -n "$DISPLAY"
+application/x-cbr;              ark '%s'; test=test -n "$DISPLAY" -a -x unrar -o -x rar
+application/x-cbz;              ark '%s'; test=test -n "$DISPLAY"
+application/x-cd-image;         ark '%s'; test=test -n "$DISPLAY"
+application/x-compress;         ark '%s'; test=test -n "$DISPLAY"
+application/x-compressed-tar;   ark '%s'; test=test -n "$DISPLAY"
+application/x-cpio;             ark '%s'; test=test -n "$DISPLAY" -a -x /bin/cpio
+application/x-deb;              ark '%s'; test=test -n "$DISPLAY"
+application/x-ear;              ark '%s'; test=test -n "$DISPLAY"
+application/x-gtar;             ark '%s'; test=test -n "$DISPLAY"
+application/x-gzip;             ark '%s'; test=test -n "$DISPLAY"
+application/x-gzpostscript;     ark '%s'; test=test -n "$DISPLAY"
+application/x-jar;              ark '%s'; test=test -n "$DISPLAY" -a -x zip -o -x zip
+application/x-java-archive;     ark '%s'; test=test -n "$DISPLAY" -a -x zip -o -x zip
+application/x-lha;              ark '%s'; test=test -n "$DISPLAY" -a -x lha
+application/x-lhz;              ark '%s'; test=test -n "$DISPLAY" -a -x lhz
+application/x-lrzip;            ark '%s'; test=test -n "$DISPLAY" -a -x lrzip
+application/x-lrzip-compressed-tar; ark '%s'; test=test -n "$DISPLAY" -a -x lrzip
+application/x-lzip;             ark '%s'; test=test -n "$DISPLAY"
+application/x-lzip-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-lzma;             ark '%s'; test=test -n "$DISPLAY"
+application/x-lzma-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-lzop;             ark '%s'; test=test -n "$DISPLAY" -a -x /bin/lzop
+application/x-lzop-compressed-tar; ark '%s'; test=test -n "$DISPLAY" -a -x /bin/lzop
+application/x-ms-dos-executable; ark '%s'; test=test -n "$DISPLAY"
+application/x-rar;              ark '%s'; test=test -n "$DISPLAY"
+application/x-rar-compressed;   ark '%s'; test=test -n "$DISPLAY"
+application/x-rpm;              ark '%s'; test=test -n "$DISPLAY" -a -x rpm
+application/x-rzip;             ark '%s'; test=test -n "$DISPLAY" -a -x rzip
+application/x-stuffit;          ark '%s'; test=test -n "$DISPLAY"
+application/x-tar;              ark '%s'; test=test -n "$DISPLAY"
+application/x-tarz;             ark '%s'; test=test -n "$DISPLAY"
+application/x-war;              ark '%s'; test=test -n "$DISPLAY"
+application/x-xz;               ark '%s'; test=test -n "$DISPLAY"
+application/x-xz-compressed-tar; ark '%s'; test=test -n "$DISPLAY"
+application/x-zip;              ark '%s'; test=test -n "$DISPLAY"
+application/x-zip-compressed;   ark '%s'; test=test -n "$DISPLAY"
+application/x-zoo;              ark '%s'; test=test -n "$DISPLAY" -a -x zoo
+application/zip;                ark '%s'; test=test -n "$DISPLAY"
+
