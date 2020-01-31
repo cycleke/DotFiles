@@ -1,7 +1,6 @@
-text/html; firefox %s;
+text/html; firefox %s; test=test -n "$DISPLAY"
 text/html; w3m -dump -T text/html %s; needsterminal; copiousoutput;
-text/plain; $EDITOR %s; copiousoutput;
-# text/plain; charset=ascii less; needsterminal;
+text/plain; less %s;
 
 image/*; feh %s; copiousoutput;
 audio/*; setsid mpv %s &; copiousoutput;

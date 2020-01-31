@@ -6,7 +6,7 @@ sudo pacman-mirrors -c China -m rank
 sudo pacman -Syyu archlinuxcn-keyring archlinux-keyring yay
 
 yay -Syyu
-yay -S gcc gdb cmake clang lldb llvm ccls stack \
+yay -S gcc gdb cmake clang lldb llvm ccls-git stack \
     python ipython anaconda php curl jdk10-openjdk jdk8-openjdk icedtea-web \
     dotnet-host-bin dotnet-runtime-bin dotnet-sdk-bin \
     alacrityy zsh tmux rofi git htop qv2ray \
