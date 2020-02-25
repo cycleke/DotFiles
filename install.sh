@@ -11,7 +11,7 @@ yay -S gcc gdb cmake clang lldb llvm ccls-git stack \
     dotnet-host-bin dotnet-runtime-bin dotnet-sdk-bin \
     alacrityy zsh tmux rofi git htop qv2ray \
     emacs gvim vscodium-bin sublime-text-dev \
-    clion pycharm-professional intellij-idea-community-edition \
+    clion pycharm-professional intellij-idea-ultimate-edition \
     fcitx fcitx-im fcitx-configtool fcitx-rime \
     wps-office kpcli nutstore texlive-most texlive-lang zathura pdfpc \
     firefox chromium w3m emacs-w3m-git emacs-elscreen-w3m emacs-elscreen \
@@ -27,6 +27,7 @@ cp gitconfig ~/.gitconfig
 # install font
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
 bash ~/Downloads/fonts/install.sh
+git clone https://github.com/purifiedh2o/San-Francisco-family.git ~/Downloads/
 
 # editor config
 cp vimrc ~/.vimrc
@@ -37,6 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 cp zshrc ~/.zshrc
+cp zshenv ~/.zshenv
 
 # tmux config
 git clone https://github.com/gpakosz/.tmux ~/.tmux
@@ -75,3 +77,7 @@ dotnet publish -c Release -r linux-x64
 cd ~/Softwares
 git clone https://github.com/okraits/j4-make-config.git
 j4-make-config/j4-make-config -r wc8
+
+cd ~/Softwares
+git clone https://github.com/cycleke/st
+git clone https://github.com/cycleke/dwm

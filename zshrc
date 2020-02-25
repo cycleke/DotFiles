@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME=random
+ZSH_THEME=ys
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,15 +111,14 @@ export DEFAULT_USER="cycleke"
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
-
 export QT_XKB_CONFIG_ROOT=/usr/share/X11/xkb
 
 alias proxy="
-export socket_proxy=127.0.0.1:1080
 export http_proxy=127.0.0.1:1081
+export socket_proxy=127.0.0.1:1080
 "
-
 alias unproxy="
+export http_proxy=
 export socket_proxy=
 "
 alias py="python3"
@@ -136,5 +135,4 @@ source /usr/share/nvm/nvm.sh --no-use
 source /usr/share/nvm/bash_completion
 source /usr/share/nvm/install-nvm-exec
 
-export PATH=$PATH:$HOME/.dotnet/tools:/opt/anaconda/bin:$HOME/.nvm/versions/node/v11.13.0/bin:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.local/bin:$HOME/.npm-global/bin
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"

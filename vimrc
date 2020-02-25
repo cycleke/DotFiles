@@ -7,14 +7,14 @@ set nu
 set smartindent
 set cindent
 set foldmethod=marker
-set foldlevel=3 
+set foldlevel=3
 set foldenable
 set autowrite
 set noeb
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set expandtab 
+set expandtab
 set anti enc=utf-8
 set guifont=GoMono\ Nerd\ Font\ 13
 
@@ -56,4 +56,3 @@ set cursorline
 :nn <M-t> :tabnew<CR>
 :nn <M-w> :close<CR>
 :nn <C-Tab> :tabnext<CR>
-
