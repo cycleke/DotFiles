@@ -46,6 +46,7 @@ cp tmux.conf.local ~/.tmux.conf.local
 
 # xprofile
 cp xprofile ~/.xprofile
+cp Xresources ~/.Xresources
 
 # fbterm config
 cp fbtermrc ~/.fbtermrc
