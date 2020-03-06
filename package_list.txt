@@ -425,6 +425,7 @@ qtermwidget-git
 qv2ray
 ranger
 rar
+redshift
 reiserfsprogs
 ripgrep
 rofi
