@@ -2,24 +2,11 @@
 
 sudo echo "\n[archlinuxcn]\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch" >> /etc/pacman.conf
 
-sudo pacman-mirrors -c China -m rank
-sudo pacman -Syyu archlinuxcn-keyring archlinux-keyring yay
+sudo pacman -Syyu archlinuxcn-keyring archlinux-keyring
+sudo pacman -S yay
 
 yay -Syyu
-yay -S gcc gdb cmake clang lldb llvm ccls-git stack \
-    python ipython anaconda php curl jdk10-openjdk jdk8-openjdk icedtea-web \
-    dotnet-host-bin dotnet-runtime-bin dotnet-sdk-bin \
-    alacrityy zsh tmux rofi git htop qv2ray \
-    emacs gvim vscodium-bin sublime-text-dev \
-    clion pycharm-professional intellij-idea-ultimate-edition \
-    fcitx fcitx-im fcitx-configtool fcitx-rime \
-    wps-office kpcli nutstore texlive-most texlive-lang zathura pdfpc \
-    firefox chromium w3m emacs-w3m-git emacs-elscreen-w3m emacs-elscreen \
-    neomutt fetchmail msmtp procmail telegram-desktop \
-    wqy-zenhei wqy-microhei nerd-fonts-complete ttf-monaco ttf-dejavu \
-    ark p7zip zip unzip rar ranger ripgrep tldr loc fluxgui \
-    youtube-dl mpv mplayer obs-studio \
-    fbterm-git fbida fbpdf-git fbv fcitx-fbterm
+yay -S - < package_list.txt
 
 # git config
 cp gitconfig ~/.gitconfig
