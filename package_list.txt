@@ -38,6 +38,7 @@ dbus-glib
 devdocs-desktop
 dhcp
 dhcpcd
+downgrade
 dunst
 efibootmgr
 emacs
@@ -129,6 +130,7 @@ patchutils
 pavucontrol-qt
 pcmanfm
 pdfpc
+picom
 pkgconf
 procmail
 proxychains-ng
@@ -153,6 +155,7 @@ socat
 speedtest-cli
 stack
 sudo
+telegram-desktop
 terminus-font
 texinfo
 texlive-bibtexextra
@@ -196,7 +199,6 @@ ttf-symbola
 ttf-twemoji-color
 ttf-wps-fonts
 unzip-iconv
-variety
 vi
 vlc
 w3m
@@ -204,6 +206,7 @@ wget
 which
 wireless_tools
 wpa_supplicant
+wps-office
 wqy-bitmapfont
 wqy-microhei
 wqy-microhei-lite
