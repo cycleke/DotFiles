@@ -12,10 +12,7 @@ xfce4-power-manager &
 xfce4-volumed-pulse &
 clipit &
 fcitx &
-qv2ray &
 redshift &
 nutstore &
 variety &
-xinput set-prop 'ETD2303:00 04F3:3083 Touchpad' "libinput Natural Scrolling Enabled" 1 &
-# /bin/bash ~/scripts/run-mailsync.sh &xd]
 ~/scripts/autostart_wait.sh &

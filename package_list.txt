@@ -266,6 +266,7 @@ xsel
 yay
 you-get
 youtube-dl
+yq
 zathura
 zathura-cb
 zathura-djvu
