@@ -1,9 +1,11 @@
 {
 	"folder_history":
 	[
+		"/home/cycleke/Documents/CS-Homework/软件构造/Lab4",
+		"/home/cycleke/Documents/CS-Homework/软件构造/Lab4/doc"
 	],
-	"last_version": 3207,
-	"last_window_id": 11,
+	"last_version": 3211,
+	"last_window_id": 2,
 	"log_indexing": false,
 	"settings":
 	{
@@ -26,55 +28,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"setting",
-						"Preferences: Settings"
-					],
-					[
-						":q",
-						"Set Syntax: SQL"
-					],
-					[
-						"c++",
-						"Set Syntax: C++"
-					],
-					[
-						":close",
-						"File: Close All"
-					],
-					[
-						"sett",
-						"Preferences: Settings"
-					],
-					[
-						"bib",
-						"Set Syntax: BibTeX"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Enable Package"
-					],
-					[
-						"color",
-						"UI: Select Color Scheme"
-					],
-					[
-						"theme",
-						"UI: Select Color Scheme"
-					]
 				],
 				"width": 0.0
 			},
 			"console":
 			{
-				"height": 171.0,
+				"height": 0.0,
 				"history":
 				[
-					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
 				]
 			},
 			"distraction_free":
@@ -88,15 +49,10 @@
 			},
 			"file_history":
 			[
-				"/home/cycleke/MyCode/WorkSpace/G.cpp",
-				"/home/cycleke/Downloads/BeamerTheme/beamerthemeSimple.sty",
-				"/home/cycleke/MyCode/WorkSpace/H.cpp",
-				"/home/cycleke/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-				"/home/cycleke/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
 			],
 			"find":
 			{
-				"height": 45.0
+				"height": 0.0
 			},
 			"find_in_files":
 			{
@@ -126,7 +82,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 50.0
+				"height": 0.0
 			},
 			"input":
 			{
@@ -140,7 +96,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 86.0
+				"height": 0.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -173,8 +129,8 @@
 			"show_minimap": true,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 150.0,
+			"side_bar_visible": true,
+			"side_bar_width": 200.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
@@ -189,10 +145,6 @@
 			{
 				"selected_items":
 				[
-					[
-						"ma",
-						"main\tmain()"
-					]
 				]
 			},
 			"buffers":
@@ -209,55 +161,14 @@
 				"last_filter": "",
 				"selected_items":
 				[
-					[
-						"c++",
-						"Set Syntax: C++"
-					],
-					[
-						"setting",
-						"Preferences: Settings"
-					],
-					[
-						":q",
-						"Set Syntax: SQL"
-					],
-					[
-						":close",
-						"File: Close All"
-					],
-					[
-						"sett",
-						"Preferences: Settings"
-					],
-					[
-						"bib",
-						"Set Syntax: BibTeX"
-					],
-					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Enable Package"
-					],
-					[
-						"color",
-						"UI: Select Color Scheme"
-					],
-					[
-						"theme",
-						"UI: Select Color Scheme"
-					]
 				],
 				"width": 0.0
 			},
 			"console":
 			{
-				"height": 171.0,
+				"height": 0.0,
 				"history":
 				[
-					"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
 				]
 			},
 			"distraction_free":
@@ -269,22 +180,18 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
+			"expanded_folders":
+			[
+				"/home/cycleke/Documents/CS-Homework/软件构造/Lab4",
+				"/home/cycleke/Documents/CS-Homework/软件构造/Lab4/src",
+				"/home/cycleke/Documents/CS-Homework/软件构造/Lab4/src/debug"
+			],
 			"file_history":
 			[
-				"/home/cycleke/.local/share/themes/Sierra-light-thin/gnome-shell/gnome-shell.css",
-				"/home/cycleke/.condarc",
-				"/home/cycleke/Documents/DotFiles/.vimrc",
-				"/home/cycleke/.ssr/settings.conf",
-				"/home/cycleke/MyCode/WorkSpace/main.cpp",
-				"/home/cycleke/MyCode/WorkSpace/G.cpp",
-				"/home/cycleke/Downloads/BeamerTheme/beamerthemeSimple.sty",
-				"/home/cycleke/MyCode/WorkSpace/H.cpp",
-				"/home/cycleke/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-				"/home/cycleke/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
 			],
 			"find":
 			{
-				"height": 48.0
+				"height": 0.0
 			},
 			"find_in_files":
 			{
@@ -312,6 +219,12 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"folders":
+			[
+				{
+					"path": "/home/cycleke/Documents/CS-Homework/软件构造/Lab4"
+				}
+			],
 			"groups":
 			[
 				{
@@ -322,7 +235,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 50.0
+				"height": 0.0
 			},
 			"input":
 			{
@@ -356,11 +269,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,0,0,1920,1080",
+			"position": "0,0,0,0,0,1920,22,3120,1920,3120,1920",
 			"project": "",
 			"replace":
 			{
-				"height": 92.0
+				"height": 0.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -397,13 +310,13 @@
 			"show_minimap": true,
 			"show_open_files": false,
 			"show_tabs": true,
-			"side_bar_visible": false,
-			"side_bar_width": 150.0,
+			"side_bar_visible": true,
+			"side_bar_width": 200.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 8,
+			"window_id": 2,
 			"workspace_name": ""
 		}
 	],

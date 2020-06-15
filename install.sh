@@ -8,6 +8,9 @@ sudo pacman -S yay
 yay -Syyu
 yay -S - < package_list.txt
 
+# tinytex
+wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
+
 # git config
 cp gitconfig ~/.gitconfig
 
@@ -34,22 +37,6 @@ cp tmux.conf.local ~/.tmux.conf.local
 
 # xprofile
 cp xprofile ~/.xprofile
-cp Xresources ~/.Xresources
-
-# fbterm config
-cp fbtermrc ~/.fbtermrc
-cp fbterm-wallpaper.sh ~/fbterm-wallpaper.sh
-
-# i3 config
-cp -r i3 ~/.i3
-cp i3status.conf ~/.i3status.conf
-
-# mail config
-cp -r mutt ~/.mutt
-cp mailcap ~/.mailcap
-cp msmtprc ~/.msmtprc
-cp procmailrc ~/.procmailrc
-cp fetchmailrc ~/.fetchmailrc
 
 # other config
 cp -r config/* ~/.config/
@@ -58,15 +45,6 @@ cp -r config/* ~/.config/
 mkdir ~/Softwares
 
 cd ~/Softwares
-git clone https://github.com/Microsoft/python-language-server.git
-cd python-language-server/src/LanguageServer/Impl
-dotnet build -c Release
-dotnet publish -c Release -r linux-x64
 
-cd ~/Softwares
-git clone https://github.com/okraits/j4-make-config.git
-j4-make-config/j4-make-config -r wc8
-
-cd ~/Softwares
 git clone https://github.com/cycleke/st
 git clone https://github.com/cycleke/dwm
