@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -125,7 +122,7 @@ alias tksv="tmux kill-server"
 alias tkss="tmux kill-session -t"
 
 alias zz="source ~/.zshrc"
-alias rm='echo "It is actually running trash-put."; trash-put'
+alias rm="trash-put"
 alias hdu='du -sk -- * | sort -n | perl -pe '\''@SI=qw(K M G T P); s:^(\d+?)((\d\d\d)*)\s:$1." ".$SI[((length $2)/3)]."\t":e'\'''
 
 export NVM_DIR="$HOME/.nvm"
@@ -161,3 +158,7 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     fi
 fi
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+# Local Variables:
+# mode: sh
+# End:
