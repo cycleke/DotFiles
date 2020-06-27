@@ -1,18 +1,18 @@
 #!/usr/bin/bash
 
-
 sudo cp pacman.conf /etc/pacman.conf
 sudo sed -i "s/PKGEXT='.pkg.tar.xz'/PKGEXT='.pkg.tar'/g" /etc/makepkg.conf
 
 sudo pacman -Syyu archlinuxcn-keyring archlinux-keyring
 sudo pacman -S yay reflector
-sudo reflector --verbose --country "China"  -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --country "China" -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
 
 yay -Syyu
-yay -S - < package_list.txt
+yay -S - <package_list.txt
 
 # tinytex
 wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
+sh ./install_tex_package.sh
 
 # git config
 cp gitconfig ~/.gitconfig
