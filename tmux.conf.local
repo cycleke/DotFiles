@@ -3,9 +3,6 @@
 #         without any warranty.
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
-# Tmux Plugin Manager
-run -b '~/.tmux/plugins/tpm/tpm'
-set -g @plugin 'tmux-plugins/tpm'
 
 # -- navigation ----------------------------------------------------------------
 
@@ -22,7 +19,7 @@ set -g @plugin 'tmux-plugins/tpm'
 # new window retains current path, possible values are:
 #   - true
 #   - false (default)
-tmux_conf_new_window_retain_current_path=false
+tmux_conf_new_window_retain_current_path=true
 
 # new pane retains current path, possible values are:
 #   - true (default)
@@ -116,7 +113,7 @@ tmux_conf_theme_window_status_bg='#080808'              # dark gray
 tmux_conf_theme_window_status_attr='none'
 tmux_conf_theme_window_status_format='#I #W'
 #tmux_conf_theme_window_status_format='#{circled_window_index} #W'
-#tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
+# tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
 
 # window current status style
 #   - built-in variables are:
@@ -149,10 +146,10 @@ tmux_conf_theme_window_status_last_bg='default'
 tmux_conf_theme_window_status_last_attr='none'
 
 # status left/right sections separators
-#tmux_conf_theme_left_separator_main=''
-#tmux_conf_theme_left_separator_sub='|'
-#tmux_conf_theme_right_separator_main=''
-#tmux_conf_theme_right_separator_sub='|'
+# tmux_conf_theme_left_separator_main=''
+# tmux_conf_theme_left_separator_sub='|'
+# tmux_conf_theme_right_separator_main=''
+# tmux_conf_theme_right_separator_sub='|'
 tmux_conf_theme_left_separator_main='\uE0B0'  # /!\ you don't need to install Powerline
 tmux_conf_theme_left_separator_sub='\uE0B1'   #   you only need fonts patched with
 tmux_conf_theme_right_separator_main='\uE0B2' #   Powerline symbols or the standalone
@@ -183,7 +180,7 @@ tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
-tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname_ssh} '
+tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username_ssh} '
 
 # status left style
 tmux_conf_theme_status_left_fg='#000000,#e4e4e4,#e4e4e4'  # black, white , white
@@ -289,12 +286,11 @@ set -g mouse on
 #set -g mode-keys vi
 
 # replace C-b by C-a instead of using both prefixes
-# actually use C-b
 set -gu prefix2
 unbind C-a
-unbind C-b
-set -g prefix C-b
-bind C-b send-prefix
+# unbind C-b
+# set -g prefix C-a
+# bind C-a send-prefix
 
 # move status line to top
 #set -g status-position top
