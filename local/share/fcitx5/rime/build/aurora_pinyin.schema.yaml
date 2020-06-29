@@ -1,0 +1,184 @@
+__build_info:
+  rime_version: 1.5.3
+  timestamps:
+    aurora_pinyin.custom: 0
+    aurora_pinyin.schema: 1593412836
+    default: 1584190865
+    default.custom: 1593412836
+    key_bindings: 1584190865
+    key_bindings.custom: 0
+    punctuation: 1584190865
+    punctuation.custom: 0
+    symbols: 1593412836
+    symbols.custom: 0
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+engine:
+  filters:
+    - "simplifier@emoji_suggestion"
+    - uniquifier
+    - "charset_filter@gbk"
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+key_binder:
+  bindings:
+    - {accept: Tab, send: Right, when: composing}
+    - {accept: "Shift+Tab", send: Page_Up, when: composing}
+    - {accept: minus, send: Page_Up, when: paging}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+  import_preset: default
+menu:
+  page_size: 8
+punctuator:
+  full_shape:
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": "#"
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤", "₩"]
+    "%": ["%", "％", "°", "℃", "‰", "‱", "℉"]
+    "&": "＆"
+    "'": {pair: ["‘", "’"]}
+    "(": {commit: "（"}
+    ")": {commit: "）"}
+    "*": ["*", "＊", "·", "・", "×", "※", "❂", "⁂", "☮", "☯", "☣"]
+    "+": {commit: "＋"}
+    ",": {commit: "，"}
+    "-": {commit: "－"}
+    .: ["。", "．"]
+    "/": ["、", "､", "/", "／", "÷"]
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": ["=", "々", "〃"]
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": "@"
+    "[": ["「", "【", "〔", "［"]
+    "\\": "、"
+    "]": ["」", "】", "〕", "］"]
+    "^": ["…", "＾"]
+    _: "——"
+    "`": ["`", "‵", "‶", "‷", "′", "″", "‴", "⁗"]
+    "{": {pair: ["【", "】"]}
+    "|": ["·", "・", "|", "｜", "§", "¦", "‖"]
+    "}": {pair: ["「", "」"]}
+    "~": ["～", "~", "˜", "≈", "≋", "≃", "≅", "≇", "∽", "⋍", "≌", "﹏", "﹋", "﹌"]
+  half_shape:
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": "#"
+    "$": {commit: "$"}
+    "%": {commit: "%"}
+    "&": {commit: "&"}
+    "'": {commit: "'"}
+    "(": {commit: "（"}
+    ")": {commit: "）"}
+    "*": {commit: "*"}
+    "+": {commit: "+"}
+    ",": {commit: "，"}
+    "-": {commit: "-"}
+    .: {commit: "。"}
+    "/": {commit: "/"}
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": {commit: "‹"}
+    "=": {commit: "="}
+    ">": {commit: "›"}
+    "?": ["？", "¿"]
+    "@": "@"
+    "[": {commit: "［"}
+    "\\": "、"
+    "]": {commit: "］"}
+    "^": {commit: "……"}
+    _: {commit: _}
+    "`": {commit: "`"}
+    "{": {pair: ["【", "】"]}
+    "|": {commit: "|"}
+    "}": {pair: ["「", "」"]}
+    "~": {commit: "～"}
+  import_preset: symbols
+recognizer:
+  import_preset: default
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+    reverse_lookup: "`[a-z]*'?$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+reverse_lookup:
+  comment_format:
+    - "xform/([nl])v/$1ü/"
+  dictionary: stroke
+  enable_completion: true
+  preedit_format:
+    - "xlit/hspnz/一丨丿丶乙/"
+  prefix: "`"
+  suffix: "'"
+  tips: "〔笔画〕"
+schema:
+  author:
+    - hosxy
+  dependencies:
+    - stroke
+    - "essay-simp"
+  description: |
+    为简体中文用户设计的拼音输入方案
+    包括《通用规范汉字表》全部8105个汉字及部分未收录汉字/字符
+    
+  name: "极光拼音"
+  schema_id: aurora_pinyin
+  version: 0.1
+speller:
+  algebra:
+    - "erase/^xx$/"
+    - "abbrev/^([a-z]).+$/$1/"
+    - "abbrev/^([zcs]h).+$/$1/"
+    - "derive/^([nl])ve$/$1ue/"
+    - "derive/^([jqxy])u/$1v/"
+    - "derive/un$/uen/"
+    - "derive/ui$/uei/"
+    - "derive/iu$/iou/"
+    - "derive/([aeiou])ng$/$1gn/"
+    - "derive/([dtngkhrzcs])o(u|ng)$/$1o/"
+    - "derive/ong$/on/"
+    - "derive/ao$/oa/"
+    - "derive/([iu])a(o|ng?)$/a$1$2/"
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+  - name: full_shape
+    states: ["半角", "全角"]
+  - name: ascii_punct
+    states: ["。，", "．，"]
+  - options: [gbk, utf8]
+    reset: 1
+    states: ["常用字", "生僻字"]
+translator:
+  dictionary: aurora_pinyin.extended
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"

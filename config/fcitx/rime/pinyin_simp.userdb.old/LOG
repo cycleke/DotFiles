@@ -1,6 +1,0 @@
-2020/05/26-09:02:46.948447 140016930301696 Log #245: 2 ops saved to Table #246 OK
-2020/05/26-09:02:46.948711 140016930301696 Archiving /home/cycleke/.config/fcitx/rime/pinyin_simp.userdb/000245.log: OK
-2020/05/26-09:02:46.948916 140016930301696 Table #242: 1542 entries OK
-2020/05/26-09:02:46.948953 140016930301696 Table #246: 2 entries OK
-2020/05/26-09:02:46.949120 140016930301696 Archiving /home/cycleke/.config/fcitx/rime/pinyin_simp.userdb/MANIFEST-000244: OK
-2020/05/26-09:02:46.952259 140016930301696 **** Repaired leveldb /home/cycleke/.config/fcitx/rime/pinyin_simp.userdb; recovered 2 files; 38588 bytes. Some data may have been lost. ****

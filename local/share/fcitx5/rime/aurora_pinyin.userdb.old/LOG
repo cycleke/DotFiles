@@ -1,0 +1,8 @@
+2020/06/29-22:18:16.124292 140287568275200 Log #16: 8 ops saved to Table #17 OK
+2020/06/29-22:18:16.124361 140287568275200 Archiving /home/cycleke/.local/share/fcitx5/rime/aurora_pinyin.userdb/000016.log: OK
+2020/06/29-22:18:16.124397 140287568275200 Table #8: 60 entries OK
+2020/06/29-22:18:16.124419 140287568275200 Table #11: 24 entries OK
+2020/06/29-22:18:16.124437 140287568275200 Table #5: 7 entries OK
+2020/06/29-22:18:16.124446 140287568275200 Table #17: 8 entries OK
+2020/06/29-22:18:16.124494 140287568275200 Archiving /home/cycleke/.local/share/fcitx5/rime/aurora_pinyin.userdb/MANIFEST-000015: OK
+2020/06/29-22:18:16.127039 140287568275200 **** Repaired leveldb /home/cycleke/.local/share/fcitx5/rime/aurora_pinyin.userdb; recovered 4 files; 2186 bytes. Some data may have been lost. ****
