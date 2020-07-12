@@ -45,6 +45,7 @@ ln -s $PWD/xprofile ~/.xprofile
 
 # other config
 cp -r config/* ~/.config/
+ln -s $PWD/scripts ~/scripts
 
 # install some softwares
 mkdir ~/Softwares
