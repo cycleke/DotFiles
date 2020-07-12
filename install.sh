@@ -44,6 +44,7 @@ ln -s $PWD/tmux.conf.local ~/.tmux.conf.local
 ln -s $PWD/xprofile ~/.xprofile
 
 # other config
+cp -r local/* ~/.local/
 cp -r config/* ~/.config/
 ln -s $PWD/scripts ~/scripts
 
