@@ -15,7 +15,7 @@ wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
 sh ./install_tex_package.sh
 
 # git config
-cp gitconfig ~/.gitconfig
+ln -s $PWD/gitconfig ~/.gitconfig
 
 # install font
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Downloads/fonts
@@ -23,7 +23,7 @@ bash ~/Downloads/fonts/install.sh
 git clone https://github.com/purifiedh2o/San-Francisco-family.git ~/Downloads/
 
 # editor config
-cp vimrc ~/.vimrc
+ln -s $PWD/vimrc ~/.vimrc
 git clone https://github.com/cycleke/.emacs.d.git ~/.emacs.d
 
 # zsh config
@@ -32,16 +32,16 @@ git clone https://github.com/sukkaw/zsh-proxy.git ~/.oh-my-zsh/custom/plugins/zs
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-cp zshrc ~/.zshrc
-cp zshenv ~/.zshenv
+ln -s $PWD/zshrc ~/.zshrc
+ln -s $PWD/zshenv ~/.zshenv
 
 # tmux config
 git clone https://github.com/gpakosz/.tmux ~/.tmux
-ln -s -f ~/.tmux/.tmux.conf
-cp tmux.conf.local ~/.tmux.conf.local
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+ln -s $PWD/tmux.conf.local ~/.tmux.conf.local
 
 # xprofile
-cp xprofile ~/.xprofile
+ln -s $PWD/xprofile ~/.xprofile
 
 # other config
 cp -r config/* ~/.config/

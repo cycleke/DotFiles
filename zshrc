@@ -60,20 +60,18 @@ ZSH_THEME="zeta"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    extract
-    emacs
-    web-search
-    battery
-    catimg
-    copyfile
-    common-aliases
-    # tmux
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-    zsh-completions
-    z
-    zsh-proxy
+	  archlinux
+	  copyfile
+	  extract
+	  git
+	  sudo
+	  vscode
+	  web-search
+	  z
+	  zsh-autosuggestions
+	  zsh-completions
+	  zsh-proxy
+	  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,7 +109,9 @@ alias pip="pip3"
 alias py="python3"
 alias py2="python2"
 alias ipy="ipython"
-alias vim="nvim"
+alias vi="nvim"
+alias ec="emacsclient -c -a \"\""
+alias et="emacsclient -t -a \"\""
 alias ra="ranger"
 
 alias ta="tmux attach -t"
@@ -121,41 +121,45 @@ alias tl="tmux list-sessions"
 alias tksv="tmux kill-server"
 alias tkss="tmux kill-session -t"
 
-alias zz="source ~/.zshrc"
 alias rm="trash-put"
 alias hdu='du -sk -- * | sort -n | perl -pe '\''@SI=qw(K M G T P); s:^(\d+?)((\d\d\d)*)\s:$1." ".$SI[((length $2)/3)]."\t":e'\'''
 
+alias -s pdf=okular
+
+eval "$(fasd --init auto)"
+neofetch
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
-    sith() {
-        val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
-        if [[ $val == "Dark" ]]; then
-            i
-        fi
-    }
-    i() {
-        if [[ $ITERM_PROFILE == "Light" ]]; then
-            echo -ne "\033]50;SetProfile=Dark\a"
-            export ITERM_PROFILE="Dark"
-            export SOBOLE_THEME_MODE=dark
-        else
-            echo -ne "\033]50;SetProfile=Light\a"
-            export ITERM_PROFILE="Light"
-            export SOBOLE_THEME_MODE=light
-        fi
-    }
-    # sith
-    val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
-    if [[ $val == "Dark" ]]; then
-      export OS_THEME_MODE=dark
-      export SOBOLE_THEME_MODE=dark
-    else
-      export OS_THEME_MODE=light
-      export SOBOLE_THEME_MODE=light
-    fi
+	  sith() {
+		    val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+		    if [[ $val == "Dark" ]]; then
+			      i
+		    fi
+	  }
+	  i() {
+		    if [[ $ITERM_PROFILE == "Light" ]]; then
+			      echo -ne "\033]50;SetProfile=Dark\a"
+			      export ITERM_PROFILE="Dark"
+			      export SOBOLE_THEME_MODE=dark
+		    else
+			      echo -ne "\033]50;SetProfile=Light\a"
+			      export ITERM_PROFILE="Light"
+			      export SOBOLE_THEME_MODE=light
+		    fi
+	  }
+	  # sith
+	  val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+	  if [[ $val == "Dark" ]]; then
+		    export OS_THEME_MODE=dark
+		    export SOBOLE_THEME_MODE=dark
+	  else
+		    export OS_THEME_MODE=light
+		    export SOBOLE_THEME_MODE=light
+	  fi
 fi
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 

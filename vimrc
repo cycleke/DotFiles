@@ -15,8 +15,14 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-set anti enc=utf-8
-set guifont=GoMono\ Nerd\ Font\ 13
+
+" let iterm_profile = $ITERM_PROFILE
+" if iterm_profile == "Dark"
+"     set background=dark
+" else
+"     set background=light        " Set solarized background color
+" endif
+" colorscheme solarized
 
 :imap jk <Esc>
 

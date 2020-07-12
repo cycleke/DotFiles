@@ -2,7 +2,7 @@
 	name = cycleke
 	email = cycleke@gmail.com
 [core]
-	editor = vim
+	quotepath = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -10,3 +10,7 @@
 	required = true
 [icdiff]
 	options = --highlight --line-numbers
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = http://127.0.0.1:7890
