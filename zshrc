@@ -60,18 +60,18 @@ ZSH_THEME="zeta"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	  archlinux
-	  copyfile
-	  extract
-	  git
-	  sudo
-	  vscode
-	  web-search
-	  z
-	  zsh-autosuggestions
-	  zsh-completions
-	  zsh-proxy
-	  zsh-syntax-highlighting
+	archlinux
+	copyfile
+	extract
+	git
+	sudo
+	vscode
+	web-search
+	z
+	zsh-autosuggestions
+	zsh-completions
+	zsh-proxy
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,6 +123,22 @@ alias tkss="tmux kill-session -t"
 
 alias rm="trash-put"
 alias hdu='du -sk -- * | sort -n | perl -pe '\''@SI=qw(K M G T P); s:^(\d+?)((\d\d\d)*)\s:$1." ".$SI[((length $2)/3)]."\t":e'\'''
+alias ariaNg="xdg-open /usr/share/aria-ng-deploy/index.html"
+aria2pro() {
+	sudo docker run -d \
+		--name aria2-pro \
+		--restart unless-stopped \
+		--log-opt max-size=1m \
+		--network host \
+		-e PUID=$UID \
+		-e PGID=$GID \
+		-e RPC_SECRET=123456 \
+		-e RPC_PORT=6800 \
+		-e LISTEN_PORT=6888 \
+		-v ~/.aria2:/config \
+		-v ~/Downloads:/downloads \
+		p3terx/aria2-pro
+}
 
 alias -s pdf=okular
 
@@ -134,32 +150,32 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
-	  sith() {
-		    val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
-		    if [[ $val == "Dark" ]]; then
-			      i
-		    fi
-	  }
-	  i() {
-		    if [[ $ITERM_PROFILE == "Light" ]]; then
-			      echo -ne "\033]50;SetProfile=Dark\a"
-			      export ITERM_PROFILE="Dark"
-			      export SOBOLE_THEME_MODE=dark
-		    else
-			      echo -ne "\033]50;SetProfile=Light\a"
-			      export ITERM_PROFILE="Light"
-			      export SOBOLE_THEME_MODE=light
-		    fi
-	  }
-	  # sith
-	  val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
-	  if [[ $val == "Dark" ]]; then
-		    export OS_THEME_MODE=dark
-		    export SOBOLE_THEME_MODE=dark
-	  else
-		    export OS_THEME_MODE=light
-		    export SOBOLE_THEME_MODE=light
-	  fi
+	sith() {
+		val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+		if [[ $val == "Dark" ]]; then
+			i
+		fi
+	}
+	i() {
+		if [[ $ITERM_PROFILE == "Light" ]]; then
+			echo -ne "\033]50;SetProfile=Dark\a"
+			export ITERM_PROFILE="Dark"
+			export SOBOLE_THEME_MODE=dark
+		else
+			echo -ne "\033]50;SetProfile=Light\a"
+			export ITERM_PROFILE="Light"
+			export SOBOLE_THEME_MODE=light
+		fi
+	}
+	# sith
+	val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+	if [[ $val == "Dark" ]]; then
+		export OS_THEME_MODE=dark
+		export SOBOLE_THEME_MODE=dark
+	else
+		export OS_THEME_MODE=light
+		export SOBOLE_THEME_MODE=light
+	fi
 fi
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 

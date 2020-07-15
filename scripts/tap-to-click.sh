@@ -2,7 +2,7 @@
 
 # Get id of touchpad and the id of the field corresponding to
 # tapping to click
-id=`xinput list | grep "Touchpad" | cut -d'=' -f2 | cut -d'[' -f1`
+id=`xinput list | grep "Elantech Touchpad" | cut -d'=' -f2 | cut -d'[' -f1`
 tap_to_click_id=`xinput list-props $id | \
                       grep "Tapping Enabled (" \
                       | cut -d'(' -f2 | cut -d')' -f1`
