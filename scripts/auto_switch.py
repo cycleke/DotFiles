@@ -13,7 +13,7 @@ def add_hidpi_mode():
             'xrandr --newmode "1440x810" 5.00 1440 1520 1664 1888  810 813 818 841 -hsync +vsync'
     ) == 0):
         os.system("xrandr --addmode " + INTERNAL + " 1440x810")
-        os.system("xrandr --output" + INTERNAL + "--mode 1440x810")
+        os.system("xrandr --output " + INTERNAL + " --mode 1440x810")
 
 
 def auto_switch_screen():
