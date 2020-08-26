@@ -10,7 +10,3 @@
 	required = true
 [icdiff]
 	options = --highlight --line-numbers
-[http]
-	proxy = socks5://127.0.0.1:7891
-[https]
-	proxy = socks5://127.0.0.1:7891

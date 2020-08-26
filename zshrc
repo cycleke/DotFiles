@@ -124,30 +124,15 @@ alias tkss="tmux kill-session -t"
 alias rm="trash-put"
 alias hdu='du -sk -- * | sort -n | perl -pe '\''@SI=qw(K M G T P); s:^(\d+?)((\d\d\d)*)\s:$1." ".$SI[((length $2)/3)]."\t":e'\'''
 alias ariaNg="xdg-open /usr/share/aria-ng-deploy/index.html"
-aria2pro() {
-	sudo docker run -d \
-		--name aria2-pro \
-		--restart unless-stopped \
-		--log-opt max-size=1m \
-		--network host \
-		-e PUID=$UID \
-		-e PGID=$GID \
-		-e RPC_SECRET=123456 \
-		-e RPC_PORT=6800 \
-		-e LISTEN_PORT=6888 \
-		-v ~/.aria2:/config \
-		-v ~/Downloads:/downloads \
-		p3terx/aria2-pro
-}
-
-alias -s pdf=okular
 
 eval "$(fasd --init auto)"
-neofetch
+source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
+autoload -Uz add-zsh-hook
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"                                       # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
 	sith() {
@@ -177,7 +162,57 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 		export SOBOLE_THEME_MODE=light
 	fi
 fi
-[ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+vterm_printf(){
+    if [ -n "$TMUX" ]; then
+        # Tell tmux to pass the escape sequences through
+        # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+
+aria2pro() {
+	sudo docker run -d \
+		--name aria2-pro \
+		--restart unless-stopped \
+		--log-opt max-size=1m \
+		--network host \
+		-e PUID=$UID \
+		-e PGID=$GID \
+		-e RPC_SECRET=123456 \
+		-e RPC_PORT=6800 \
+		-e LISTEN_PORT=6888 \
+		-v ~/.aria2:/config \
+		-v ~/Downloads:/downloads \
+		p3terx/aria2-pro
+}
+
+_zsh_autosuggest_strategy_histdb_top_here() {
+    local query="select commands.argv from
+history left join commands on history.command_id = commands.rowid
+left join places on history.place_id = places.rowid
+where places.dir LIKE '$(sql_escape $PWD)%'
+and commands.argv LIKE '$(sql_escape $1)%'
+group by commands.argv order by count(*) desc limit 1"
+    suggestion=$(_histdb_query "$query")
+}
+_zsh_autosuggest_strategy_histdb_top() {
+    local query="select commands.argv from
+history left join commands on history.command_id = commands.rowid
+left join places on history.place_id = places.rowid
+where commands.argv LIKE '$(sql_escape $1)%'
+group by commands.argv
+order by places.dir != '$(sql_escape $PWD)', count(*) desc limit 1"
+    suggestion=$(_histdb_query "$query")
+}
+ZSH_AUTOSUGGEST_STRATEGY=histdb_top
+
+neofetch
 
 # Local Variables:
 # mode: sh
