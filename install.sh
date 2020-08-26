@@ -8,7 +8,7 @@ sudo pacman -S yay reflector
 sudo reflector --verbose --country "China" -l 200 -p http --sort rate --save /etc/pacman.d/mirrorlist
 
 yay -Syyu
-yay -S - <package_list.txt
+yay -S --needed - (< pkglist.txt)
 
 # tinytex
 wget -qO- "https://yihui.org/gh/tinytex/tools/install-unx.sh" | sh
