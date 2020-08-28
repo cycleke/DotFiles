@@ -71,7 +71,7 @@ get_time_until_charged() {
 	seconds=$(bc <<< "scale = 10; ($sum_remaining_charge / $present_rate) * 3600");
 
 	# prettifies the seconds into h:mm:ss format
-	pretty_time=$(date -u -d @${seconds} +%T);
+	pretty_time=$(date -u -d @${seconds} '+%T');
 
 	echo $pretty_time;
 }
@@ -116,11 +116,11 @@ print_bat(){
 		#echo -e "${charge}"
 	#fi
 	#echo "$(get_battery_charging_status) $(get_battery_combined_percent)%, $(get_time_until_charged )";
-	echo "$(get_battery_charging_status) $(get_battery_combined_percent)%, $(get_time_until_charged )";
+	echo "$(get_battery_charging_status) $(get_battery_combined_percent)%";
 }
 
 print_date(){
-	date '+%Y年%m月%d日 %H:%M'
+	date '+%Y年%m月%d日 %H:%M:%S'
 }
 
 show_record(){
@@ -156,7 +156,8 @@ get_bytes
 vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-xsetroot -name " 💿 $(print_mem)M ⬇ $vel_recv ⬆ $vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
+# xsetroot -name " 💿 $(print_mem)M ⬇ $vel_recv ⬆ $vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
+echo " 💿 $(print_mem)M ⬇ $vel_recv ⬆ $vel_trans $(dwm_alsa) [ $(print_bat) ]$(show_record) $(print_date) "
 
 # Update old values to perform new calculations
 old_received_bytes=$received_bytes

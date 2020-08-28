@@ -47,6 +47,7 @@ ln -s $PWD/xprofile ~/.xprofile
 cp -r local/* ~/.local/
 cp -r config/* ~/.config/
 ln -s $PWD/scripts ~/scripts
+ln -s $PWD/statusline.sh  ~/.statusline.sh
 
 # install some softwares
 mkdir ~/Softwares
