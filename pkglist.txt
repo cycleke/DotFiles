@@ -29,6 +29,7 @@ base
 bash-language-server
 bbswitch
 bc
+beets
 bind
 binutils
 bison
@@ -40,6 +41,7 @@ ccls
 chromium
 clang
 clash
+clashup
 clion
 cmake
 cppman
@@ -57,6 +59,7 @@ docx2txt
 dolphin
 dolphin-plugins
 dpkg
+dunst
 efibootmgr
 emacs
 emacs-apel
@@ -97,17 +100,21 @@ glibmm
 glslang
 gnome-keyring
 gnome-settings-daemon
+gnome-themes-extra
 gnustep-base
+go
 goldendict-qt5-git
 gptfdisk
 graphviz
 grep
 groff
 grub
+gtk-theme-switch2
 gvim
 gzip
 htop
 http-parser
+i3lock-color
 icedtea-web
 imagemagick
 imlib2
@@ -133,6 +140,9 @@ jre8-openjdk-headless
 jsoncpp
 keepass
 kvantum-qt5
+lib32-nvidia-utils
+lib32-primus
+lib32-virtualgl
 libreoffice-fresh
 libtool
 linux
@@ -143,6 +153,7 @@ loc
 lxappearance
 m4
 make
+man-db
 maven
 mcmojave-circle-icon-theme-git
 memtest86+
@@ -150,6 +161,7 @@ mesa-demos
 mojave-gtk-theme-git
 mono
 mpv
+ncdu
 neofetch
 neovim
 nerd-fonts-complete
@@ -171,6 +183,7 @@ ntfs-3g
 ntp
 nutstore-experimental
 nvidia
+nvidia-settings
 nvidia-utils
 nvm
 obs-studio
@@ -245,6 +258,7 @@ rime-stroke
 rime-terra-pinyin
 ripgrep
 rofi
+rofi-wifi-menu-git
 rsync
 ruby
 rustup
@@ -252,7 +266,9 @@ screenfetch
 sddm
 sddm-chinese-painting-theme
 sed
+selectdefaultapplication-git
 serf
+shfmt
 simplescreenrecorder
 socat
 soundtouch
@@ -273,6 +289,7 @@ timeshift
 tmux
 traceroute
 transcode
+translate-shell
 trash-cli
 tree
 ttf-dejavu
@@ -289,7 +306,6 @@ ttf-sarasa-gothic
 ttf-symbola
 ttf-wps-fonts
 v2ray
-variety
 vi
 vlc
 vmaf
@@ -304,6 +320,7 @@ wqy-bitmapfont
 wqy-microhei
 wqy-microhei-lite
 wqy-zenhei
+xautolock
 xclip
 xdg-desktop-portal
 xdg-desktop-portal-kde
@@ -369,6 +386,11 @@ yarn
 yay
 you-get
 youtube-dl
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
 zeal-git
 zip
 zotero

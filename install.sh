@@ -48,7 +48,6 @@ cp -r local/* ~/.local/
 cp -r config/* ~/.config/
 ln -s $PWD/scripts ~/scripts
 ln -s $PWD/picom.conf  ~/.picom.conf
-ln -s $PWD/statusline.sh  ~/.statusline.sh
 
 # install some softwares
 mkdir ~/Softwares
