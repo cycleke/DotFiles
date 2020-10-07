@@ -29,16 +29,19 @@ EnumerateWithTriggerKeys=False
 0=Hangul_Romaja
 
 [Hotkey/PrevPage]
-0=Up
+0=bracketleft
 
 [Hotkey/NextPage]
-0=Down
+0=bracketright
 
 [Hotkey/PrevCandidate]
 0=Shift+Tab
 
 [Hotkey/NextCandidate]
 0=Tab
+
+[Hotkey/TogglePreedit]
+0=Control+Alt+P
 
 [Behavior]
 # 默认状态为激活
@@ -50,9 +53,11 @@ ShowInputMethodInformation=True
 # 在焦点更改时显示输入法信息
 showInputMethodInformationWhenFocusIn=False
 # 默认页大小
-DefaultPageSize=5
+DefaultPageSize=8
 # Force Enabled Addons
 EnabledAddons=
 # Force Disabled Addons
 DisabledAddons=
+# Preload input method to be used by default
+PreloadInputMethod=True
 

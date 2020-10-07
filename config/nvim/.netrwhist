@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/cycleke/Blog/themes/even/i18n'
+let g:netrw_dirhist_9='/home/cycleke/Documents/新数据/official/data/trie'
+let g:netrw_dirhist_8='/home/cycleke/Documents/slides/2020暑假/终测题解'
+let g:netrw_dirhist_7='/usr/local/man/man1'
+let g:netrw_dirhist_6='/home/cycleke/SoftWares/EvanMeekEmacsD/etc'
+let g:netrw_dirhist_5='/home/cycleke/Downloads/Takeout/邮件/用户设置'
+let g:netrw_dirhist_4='/home/cycleke/scripts'
+let g:netrw_dirhist_3='/home/cycleke/.screenlayout'
+let g:netrw_dirhist_2='/home/cycleke/Videos/软件构造/.accelerate'
+let g:netrw_dirhist_1='/home/cycleke/scripts'

@@ -1,2 +1,2 @@
 show-icons: true
-rofi.theme: /home/cycleke/.local/share/rofi/themes/sidetab-adapta.rasi
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi
