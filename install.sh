@@ -48,6 +48,7 @@ cp -r local/* ~/.local/
 cp -r config/* ~/.config/
 ln -s $PWD/scripts ~/scripts
 ln -s $PWD/picom.conf  ~/.picom.conf
+ln -s $PWD/scripts/autostart.sh ~/.local/share/dwm/autostart.sh 
 
 # install some softwares
 mkdir ~/Softwares
