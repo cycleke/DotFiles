@@ -61,6 +61,7 @@ ZSH_THEME="zeta"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	archlinux
+  conda-zsh-completion
 	copyfile
 	extract
 	git
@@ -128,11 +129,14 @@ alias ariaNg="xdg-open /usr/share/aria-ng-deploy/index.html"
 eval "$(fasd --init auto)"
 source $HOME/.oh-my-zsh/custom/plugins/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
+autoload -U compinit && compinit
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"                                       # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
 	sith() {

@@ -6,7 +6,7 @@
 # xrandr --addmode eDP1 1440x810
 # xrandr --output eDP1 --primary --mode 1440x810 --pos 1200x952 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1200 --pos 0x0 --rotate left --output HDMI2 --off --output VIRTUAL1 --off
 
-xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x668 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off
+xrandr --output eDP1 --primary --mode 1920x1080 --pos 1200x840 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1200 --pos 0x0 --rotate left --output HDMI2 --off --output VIRTUAL1 --off
 
 /bin/bash ~/scripts/wp-autochange.sh &
 /bin/bash ~/scripts/dwm-status.sh &

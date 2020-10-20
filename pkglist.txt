@@ -36,13 +36,14 @@ boost-libs
 brightnessctl
 bumblebee
 ccache
-ccls
+ccls-git
 chromium
 clang
 clash
 cmake
 cpupower
 ctags
+cuda
 cups
 cups-filters
 dbus-glib
@@ -55,6 +56,7 @@ docx2txt
 dolphin
 dolphin-plugins
 dos2unix
+downgrade
 dpkg
 dunst
 efibootmgr
@@ -71,6 +73,7 @@ fcitx5-material-color
 fcitx5-pinyin-moegirl
 fcitx5-pinyin-moegirl-rime
 fcitx5-pinyin-zhwiki
+fcitx5-pinyin-zhwiki-rime
 fcitx5-rime
 fd
 feh
@@ -140,6 +143,7 @@ jre-openjdk-headless
 jsoncpp
 keepass
 kvantum-qt5
+lib32-freetype2-infinality-ultimate
 lib32-nvidia-utils
 lib32-primus
 lib32-virtualgl
@@ -149,6 +153,7 @@ linux
 linux-firmware
 lldb
 llvm
+luit
 lxappearance
 m4
 make
@@ -198,6 +203,7 @@ pacman
 pacman-contrib
 pandoc
 patch
+pavucontrol
 picom
 pkgconf
 powerline
@@ -245,6 +251,7 @@ qt5-x11extras
 qv2ray
 ranger
 rar
+redshift
 reflector
 rime-bopomofo
 rime-cangjie
@@ -330,7 +337,6 @@ xorg-fonts-75dpi
 xorg-fonts-encodings
 xorg-font-util
 xorg-iceauth
-xorg-luit
 xorg-mkfontscale
 xorg-server
 xorg-server-common
