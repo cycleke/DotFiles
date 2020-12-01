@@ -26,13 +26,13 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_backlight.sh"
 . "$DIR/dwmbar-functions/dwm_alsa.sh"
 #. "$DIR/dwmbar-functions/dwm_pulse.sh"
-. "$DIR/dwmbar-functions/dwm_weather.sh"
+# . "$DIR/dwmbar-functions/dwm_weather.sh"
 #. "$DIR/dwmbar-functions/dwm_vpn.sh"
 #. "$DIR/dwmbar-functions/dwm_network.sh"
 #. "$DIR/dwmbar-functions/dwm_keyboard.sh"
 #. "$DIR/dwmbar-functions/dwm_ccurse.sh"
 #. "$DIR/dwmbar-functions/dwm_date.sh"
 
-xsetroot -name "💿$(print_mem)M $(dwm_alsa) $(print_temp) [$(dwm_battery)] $(dwm_weather) $(print_date)"
+xsetroot -name "💿$(print_mem)M $(dwm_alsa) $(print_temp) [$(dwm_battery)] $(print_date)"
 
 exit 0

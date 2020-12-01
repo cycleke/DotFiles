@@ -8,10 +8,13 @@
 
 xrandr --output eDP1 --primary --mode 1920x1080 --pos 1200x840 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1200 --pos 0x0 --rotate left --output HDMI2 --off --output VIRTUAL1 --off
 
+cd  ~/scripts
 /bin/bash ~/scripts/wp-autochange.sh &
 /bin/bash ~/scripts/dwm-status.sh &
 /bin/bash ~/scripts/tap-to-click.sh &
 /bin/bash ~/scripts/inverse-scroll.sh &
+/bin/bash ~/scripts/autostart_wait.sh &
+
 picom -b --config ~/.picom.conf &
 xfce4-power-manager &
 # xfce4-volumed-pulse &
@@ -23,5 +26,7 @@ nm-applet &
 # albert &
 fcitx5 &
 dunst &
-~/scripts/autostart_wait.sh &
+wmname LG3D &
+# gsettings set org.gnome.desktop.interface gtk-theme Ant-Dracula-slim &
+# gsettings set org.gnome.desktop.interface icon-theme McMojave-circle-bule &
 xautolock -time 30 -locker ~/scripts/lock.sh -detectsleep &

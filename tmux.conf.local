@@ -295,4 +295,5 @@ bind C-w send-prefix
 # move status line to top
 #set -g status-position top
 
-set -g @onedark_widgets "#{uptime}"
+set -g default-terminal "screen-256color"  # Setting the correct term
+source-file ~/.tmux/themes/tmux-tomorrow/tomorrow.tmux
