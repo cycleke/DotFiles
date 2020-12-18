@@ -1,0 +1,7 @@
+.z
+.zcompdump
+.zcompcache
+.zkbd
+.*_history
+*.bak
+.zinit

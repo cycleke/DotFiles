@@ -1,0 +1,240 @@
+<config>
+ <paths>
+  <path recursive="1">/home/cycleke/.goldendict/dict</path>
+ </paths>
+ <sounddirs/>
+ <dictionaryOrder name="" id="0">
+  <dictionary name="英语 (US) 构词法">8c1d6be66510a3e1f4ab49b367da7c68</dictionary>
+  <dictionary name="English Wiktionary">affcf9678e7bfe701c9b071f97eccba3</dictionary>
+  <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
+  <dictionary name="中文维基">52087f7520d355aad4ce82433c414ac5</dictionary>
+  <dictionary name="21世纪双语科技词典">eebfab90622136a0bf9559b7e344003f</dictionary>
+  <dictionary name="中华成语大词典 2.1">9b56f96522bffcdb3ecf2f3453a701ba</dictionary>
+  <dictionary name="古汉语常用字字典">b7caf7036ddd784cbdf0c409dba5f183</dictionary>
+  <dictionary name="汉语辞海">248175f5e8edc14db19fb379c0402996</dictionary>
+  <dictionary name="康熙字典">a1f0a85707a9b504adb33c8d1bd15ad2</dictionary>
+  <dictionary name="朗道汉英字典5.0">dca64761798b97c481fb81f4a7d787ee</dictionary>
+  <dictionary name="21世紀電腦英漢漢英雙向辭典">20d76b283a0451eeacd8a718e07793b4</dictionary>
+  <dictionary name="CC-CEDICT">736f0b10c1a7d67fccf5dde4ad9520de</dictionary>
+  <dictionary name="COCA Frequency 60000">3779a3fa06eb64a7c793ef7adcac3521</dictionary>
+  <dictionary name="Collins English Dictionary and Thesaurus, 2015">ebb3984b102504710f0a1e9a127ea3f4</dictionary>
+  <dictionary name="Longman DOCE 6th Ed">491dce95e68ec56973160fcbae9cfd6c</dictionary>
+  <dictionary name="Macmillan English Dictionary 2nd Edition">ad09b72cd9572977a45f1221dcd4d6ea</dictionary>
+  <dictionary name="Merrian Webster Advanced Learners (2013)">350e62593fda3439cd298e99a318510a</dictionary>
+  <dictionary name="thesaurus.com近反义词词典">54e2853199c590ca281e572f11db27d7</dictionary>
+  <dictionary name="World Book Dictionary, 2015">9bea93dd507d114f0cc534746bef6b13</dictionary>
+  <dictionary name="新汉英大辞典">68406d90053649ecd67465ebc09216f1</dictionary>
+  <dictionary name="英汉百科知识辞典">bf6f36e772a568dd3e98ff65fb28e110</dictionary>
+  <dictionary name="Collins Thesaurus">fabc891ad1361adc0c4803e9037c3e1e</dictionary>
+  <dictionary name="USE THE RIGHT WORD">1e11e4e699288efaed1ef04f671688e1</dictionary>
+  <dictionary name="柯林斯COBUILD高阶英汉双解学习词典">7cef9eec50ebacc50d410d9d46e1c2bf</dictionary>
+  <mutedDictionaries/>
+ </dictionaryOrder>
+ <inactiveDictionaries name="" id="0">
+  <mutedDictionaries/>
+ </inactiveDictionaries>
+ <groups nextId="15">
+  <group name="En - En" shortcut="Ctrl+1" id="11">
+   <dictionary name="英语 (US) 构词法">8c1d6be66510a3e1f4ab49b367da7c68</dictionary>
+   <dictionary name="CC-CEDICT">736f0b10c1a7d67fccf5dde4ad9520de</dictionary>
+   <dictionary name="COCA Frequency 60000">3779a3fa06eb64a7c793ef7adcac3521</dictionary>
+   <dictionary name="Collins English Dictionary and Thesaurus, 2015">ebb3984b102504710f0a1e9a127ea3f4</dictionary>
+   <dictionary name="Longman DOCE 6th Ed">491dce95e68ec56973160fcbae9cfd6c</dictionary>
+   <dictionary name="Macmillan English Dictionary 2nd Edition">ad09b72cd9572977a45f1221dcd4d6ea</dictionary>
+   <dictionary name="Merrian Webster Advanced Learners (2013)">350e62593fda3439cd298e99a318510a</dictionary>
+   <dictionary name="thesaurus.com近反义词词典">54e2853199c590ca281e572f11db27d7</dictionary>
+   <dictionary name="World Book Dictionary, 2015">9bea93dd507d114f0cc534746bef6b13</dictionary>
+   <dictionary name="Collins Thesaurus">fabc891ad1361adc0c4803e9037c3e1e</dictionary>
+   <dictionary name="USE THE RIGHT WORD">1e11e4e699288efaed1ef04f671688e1</dictionary>
+   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
+   <dictionary name="English Wiktionary">affcf9678e7bfe701c9b071f97eccba3</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="En - Zh" shortcut="Ctrl+2" id="12">
+   <dictionary name="英语 (US) 构词法">8c1d6be66510a3e1f4ab49b367da7c68</dictionary>
+   <dictionary name="21世紀電腦英漢漢英雙向辭典">20d76b283a0451eeacd8a718e07793b4</dictionary>
+   <dictionary name="英汉百科知识辞典">bf6f36e772a568dd3e98ff65fb28e110</dictionary>
+   <dictionary name="柯林斯COBUILD高阶英汉双解学习词典">7cef9eec50ebacc50d410d9d46e1c2bf</dictionary>
+   <dictionary name="21世纪双语科技词典">eebfab90622136a0bf9559b7e344003f</dictionary>
+   <dictionary name="中文维基">52087f7520d355aad4ce82433c414ac5</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="Zh - Zh" shortcut="Ctrl+3" id="13">
+   <dictionary name="21世纪双语科技词典">eebfab90622136a0bf9559b7e344003f</dictionary>
+   <dictionary name="古汉语常用字字典">b7caf7036ddd784cbdf0c409dba5f183</dictionary>
+   <dictionary name="汉语辞海">248175f5e8edc14db19fb379c0402996</dictionary>
+   <dictionary name="康熙字典">a1f0a85707a9b504adb33c8d1bd15ad2</dictionary>
+   <dictionary name="中文维基">52087f7520d355aad4ce82433c414ac5</dictionary>
+   <mutedDictionaries/>
+  </group>
+  <group name="Zh - En" shortcut="Ctrl+4" id="14">
+   <dictionary name="柯林斯COBUILD高阶英汉双解学习词典">7cef9eec50ebacc50d410d9d46e1c2bf</dictionary>
+   <dictionary name="朗道汉英字典5.0">dca64761798b97c481fb81f4a7d787ee</dictionary>
+   <dictionary name="21世纪双语科技词典">eebfab90622136a0bf9559b7e344003f</dictionary>
+   <dictionary name="21世紀電腦英漢漢英雙向辭典">20d76b283a0451eeacd8a718e07793b4</dictionary>
+   <dictionary name="新汉英大辞典">68406d90053649ecd67465ebc09216f1</dictionary>
+   <mutedDictionaries/>
+  </group>
+ </groups>
+ <hunspell dictionariesPath="/home/cycleke/.goldendict/dict/morphology">
+  <enabled>en_US</enabled>
+ </hunspell>
+ <transliteration>
+  <enableRussianTransliteration>0</enableRussianTransliteration>
+  <enableGermanTransliteration>0</enableGermanTransliteration>
+  <enableGreekTransliteration>0</enableGreekTransliteration>
+  <enableBelarusianTransliteration>0</enableBelarusianTransliteration>
+  <romaji>
+   <enable>0</enable>
+   <enableHepburn>1</enableHepburn>
+   <enableNihonShiki>0</enableNihonShiki>
+   <enableKunreiShiki>0</enableKunreiShiki>
+   <enableHiragana>1</enableHiragana>
+   <enableKatakana>1</enableKatakana>
+  </romaji>
+ </transliteration>
+ <forvo>
+  <enable>0</enable>
+  <apiKey></apiKey>
+  <languageCodes></languageCodes>
+ </forvo>
+ <mediawikis>
+  <mediawiki name="English Wikipedia" icon="" url="https://en.wikipedia.org/w" id="ae6f89aac7151829681b85f035d54e48" enabled="1"/>
+  <mediawiki name="English Wiktionary" icon="" url="https://en.wiktionary.org/w" id="affcf9678e7bfe701c9b071f97eccba3" enabled="1"/>
+  <mediawiki name="Russian Wikipedia" icon="" url="https://ru.wikipedia.org/w" id="8e0c1c2b6821dab8bdba8eb869ca7176" enabled="0"/>
+  <mediawiki name="Russian Wiktionary" icon="" url="https://ru.wiktionary.org/w" id="b09947600ae3902654f8ad4567ae8567" enabled="0"/>
+  <mediawiki name="German Wikipedia" icon="" url="https://de.wikipedia.org/w" id="a8a66331a1242ca2aeb0b4aed361c41d" enabled="0"/>
+  <mediawiki name="German Wiktionary" icon="" url="https://de.wiktionary.org/w" id="21c64bca5ec10ba17ff19f3066bc962a" enabled="0"/>
+  <mediawiki name="Portuguese Wikipedia" icon="" url="https://pt.wikipedia.org/w" id="96957cb2ad73a20c7a1d561fc83c253a" enabled="0"/>
+  <mediawiki name="Portuguese Wiktionary" icon="" url="https://pt.wiktionary.org/w" id="ed4c3929196afdd93cc08b9a903aad6a" enabled="0"/>
+  <mediawiki name="Greek Wikipedia" icon="" url="https://el.wikipedia.org/w" id="f3b4ec8531e52ddf5b10d21e4577a7a2" enabled="0"/>
+  <mediawiki name="Greek Wiktionary" icon="" url="https://el.wiktionary.org/w" id="5d45232075d06e002dea72fe3e137da1" enabled="0"/>
+  <mediawiki name="中文维基" icon="" url="https://zh.wikipedia.org/w" id="52087f7520d355aad4ce82433c414ac5" enabled="1"/>
+ </mediawikis>
+ <websites>
+  <website name="Google En-En (Oxford)" inside_iframe="1" icon="" url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en" id="b88cb2898e634c6638df618528284c2d" enabled="0"/>
+  <website name="Urban Dictionary" inside_iframe="1" icon="" url="https://www.urbandictionary.com/define.php?term=%GDWORD%" id="f376365a0de651fd7505e7e5e683aa45" enabled="0"/>
+  <website name="Multitran (En)" inside_iframe="1" icon="" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" id="324ca0306187df7511b26d3847f4b07c" enabled="0"/>
+  <website name="Lingvo (En-Ru)" inside_iframe="1" icon="" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" id="924db471b105299c82892067c0f10787" enabled="0"/>
+  <website name="Michaelis (Pt-En)" inside_iframe="1" icon="" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" id="087a6d65615fb047f4c80eef0a9465db" enabled="0"/>
+ </websites>
+ <dictservers/>
+ <programs/>
+ <voiceEngines/>
+ <mutedDictionaries>
+  <mutedDictionary>ae6f89aac7151829681b85f035d54e48</mutedDictionary>
+ </mutedDictionaries>
+ <popupMutedDictionaries/>
+ <preferences>
+  <interfaceLanguage></interfaceLanguage>
+  <helpLanguage></helpLanguage>
+  <displayStyle></displayStyle>
+  <newTabsOpenAfterCurrentOne>1</newTabsOpenAfterCurrentOne>
+  <newTabsOpenInBackground>1</newTabsOpenInBackground>
+  <hideSingleTab>0</hideSingleTab>
+  <mruTabOrder>1</mruTabOrder>
+  <hideMenubar>0</hideMenubar>
+  <enableTrayIcon>1</enableTrayIcon>
+  <startToTray>0</startToTray>
+  <closeToTray>1</closeToTray>
+  <autoStart>0</autoStart>
+  <doubleClickTranslates>1</doubleClickTranslates>
+  <selectWordBySingleClick>0</selectWordBySingleClick>
+  <escKeyHidesMainWindow>0</escKeyHidesMainWindow>
+  <zoomFactor>1.1</zoomFactor>
+  <helpZoomFactor>1</helpZoomFactor>
+  <wordsZoomLevel>0</wordsZoomLevel>
+  <enableMainWindowHotkey>0</enableMainWindowHotkey>
+  <mainWindowHotkey>Ctrl+F11, Ctrl+F11</mainWindowHotkey>
+  <enableClipboardHotkey>1</enableClipboardHotkey>
+  <clipboardHotkey>Alt+G</clipboardHotkey>
+  <enableScanPopup>0</enableScanPopup>
+  <startWithScanPopupOn>0</startWithScanPopupOn>
+  <enableScanPopupModifiers>0</enableScanPopupModifiers>
+  <scanPopupModifiers>0</scanPopupModifiers>
+  <scanPopupAltMode>0</scanPopupAltMode>
+  <scanPopupAltModeSecs>3</scanPopupAltModeSecs>
+  <ignoreOwnClipboardChanges>0</ignoreOwnClipboardChanges>
+  <scanToMainWindow>0</scanToMainWindow>
+  <ignoreDiacritics>0</ignoreDiacritics>
+  <showScanFlag>0</showScanFlag>
+  <scanPopupUseUIAutomation>1</scanPopupUseUIAutomation>
+  <scanPopupUseIAccessibleEx>1</scanPopupUseIAccessibleEx>
+  <scanPopupUseGDMessage>1</scanPopupUseGDMessage>
+  <scanPopupUnpinnedWindowFlags>0</scanPopupUnpinnedWindowFlags>
+  <scanPopupUnpinnedBypassWMHint>0</scanPopupUnpinnedBypassWMHint>
+  <pronounceOnLoadMain>0</pronounceOnLoadMain>
+  <pronounceOnLoadPopup>0</pronounceOnLoadPopup>
+  <useInternalPlayer>0</useInternalPlayer>
+  <internalPlayerBackend>FFmpeg+libao</internalPlayerBackend>
+  <audioPlaybackProgram>mpv</audioPlaybackProgram>
+  <alwaysOnTop>0</alwaysOnTop>
+  <searchInDock>0</searchInDock>
+  <historyStoreInterval>0</historyStoreInterval>
+  <favoritesStoreInterval>0</favoritesStoreInterval>
+  <confirmFavoritesDeletion>1</confirmFavoritesDeletion>
+  <proxyserver useSystemProxy="0" enabled="1">
+   <type>0</type>
+   <host>127.0.0.1</host>
+   <port>7891</port>
+   <user></user>
+   <password></password>
+   <systemProxyUser></systemProxyUser>
+   <systemProxyPassword></systemProxyPassword>
+  </proxyserver>
+  <checkForNewReleases>1</checkForNewReleases>
+  <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
+  <enableWebPlugins>0</enableWebPlugins>
+  <hideGoldenDictHeader>0</hideGoldenDictHeader>
+  <maxStringsInHistory>500</maxStringsInHistory>
+  <storeHistory>1</storeHistory>
+  <alwaysExpandOptionalParts>0</alwaysExpandOptionalParts>
+  <addonStyle>arc-dark</addonStyle>
+  <collapseBigArticles>0</collapseBigArticles>
+  <articleSizeLimit>2000</articleSizeLimit>
+  <maxDictionaryRefsInContextMenu>20</maxDictionaryRefsInContextMenu>
+  <trackClipboardChanges>0</trackClipboardChanges>
+  <synonymSearchEnabled>1</synonymSearchEnabled>
+  <fullTextSearch>
+   <searchMode>0</searchMode>
+   <matchCase>0</matchCase>
+   <maxArticlesPerDictionary>100</maxArticlesPerDictionary>
+   <maxDistanceBetweenWords>2</maxDistanceBetweenWords>
+   <useMaxArticlesPerDictionary>0</useMaxArticlesPerDictionary>
+   <useMaxDistanceBetweenWords>1</useMaxDistanceBetweenWords>
+   <dialogGeometry></dialogGeometry>
+   <disabledTypes></disabledTypes>
+   <enabled>1</enabled>
+   <ignoreWordsOrder>0</ignoreWordsOrder>
+   <ignoreDiacritics>0</ignoreDiacritics>
+   <maxDictionarySize>0</maxDictionarySize>
+  </fullTextSearch>
+ </preferences>
+ <lastMainGroupId>4294967294</lastMainGroupId>
+ <lastPopupGroupId>0</lastPopupGroupId>
+ <popupWindowState>AAAA/wAAAAH9AAAAAAAAAg8AAAGTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
+ <popupWindowGeometry>AdnQywADAAAAAAAAAAAAAAAAAiwAAAGSAAAAAAAAAAAAAAIsAAABkgAAAAAAAAAAB4AAAAAAAAAAAAAAAiwAAAGS</popupWindowGeometry>
+ <pinPopupWindow>0</pinPopupWindow>
+ <popupWindowAlwaysOnTop>1</popupWindowAlwaysOnTop>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAAC9AP///wAAAAEAAAC+AAADxfwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEwAAAE/AAAAiAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAQAAAY8AAAE/AAAAiAD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAAC0gAAAT8AAACIAP///wAAAusAAAPFAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAALV/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAPJAAAAHQAAB3UAAAQtAAADyQAAAB0AAAd1AAAELQAAAAAAAAAAB4AAAAPJAAAAHQAAB3UAAAQt</mainWindowGeometry>
+ <helpWindowGeometry></helpWindowGeometry>
+ <helpSplitterState></helpSplitterState>
+ <dictInfoGeometry>AdnQywADAAAAAAc8AAAEBQAACZcAAAWYAAAHPgAABAcAAAmVAAAFlgAAAAAAAAAAB4AAAAc+AAAEBwAACZUAAAWW</dictInfoGeometry>
+ <inspectorGeometry></inspectorGeometry>
+ <timeForNewReleaseCheck>2020-05-28T23:17:05</timeForNewReleaseCheck>
+ <skippedRelease></skippedRelease>
+ <showingDictBarNames>0</showingDictBarNames>
+ <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
+ <editDictionaryCommandLine></editDictionaryCommandLine>
+ <maxPictureWidth>0</maxPictureWidth>
+ <maxHeadwordSize>256</maxHeadwordSize>
+ <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
+ <headwordsDialog>
+  <searchMode>0</searchMode>
+  <matchCase>0</matchCase>
+  <autoApply>0</autoApply>
+  <headwordsExportPath></headwordsExportPath>
+  <headwordsDialogGeometry>AdnQywADAAAAAAd/AAADuAAACVEAAAXhAAAHgQAAA7oAAAlPAAAF3wAAAAAAAAAAB4AAAAeBAAADugAACU8AAAXf</headwordsDialogGeometry>
+ </headwordsDialog>
+</config>

@@ -1,0 +1,15 @@
+[user]
+	name = cycleke
+	email = cycleke@gmail.com
+[core]
+	quotepath = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[icdiff]
+	options = --highlight --line-numbers
+
+[pull]
+	ff = only
