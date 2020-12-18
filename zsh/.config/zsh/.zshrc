@@ -21,8 +21,11 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 ZSH_AUTOSUGGEST_USE_ASYNC=1
 ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 
-ZSHZ_DATA=$ZDOTDIR/.z
+forgit_add=gai
+forgit_diff=gdi
+forgit_log=glgi
 
+ZSHZ_DATA=$ZDOTDIR/.z
 
 zinit wait="1" lucid light-mode for \
       wookayin/fzf-fasd \
@@ -55,6 +58,7 @@ zinit as="completion" for \
 zinit light-mode for \
       zdharma/fast-syntax-highlighting \
       zsh-users/zsh-autosuggestions \
+      zpm-zsh/ls \
       SukkaW/zsh-proxy
 
 # 杂乱文件 source

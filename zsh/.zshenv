@@ -6,7 +6,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
-export EDITOR="emacsclient -t -a \"\""
+export EDITOR="emacsclient -c -a \"\""
 # export EDITOR="nvim"
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5

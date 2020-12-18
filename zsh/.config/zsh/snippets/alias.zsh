@@ -10,7 +10,7 @@ alias tksv="tmux kill-server"
 alias tkss="tmux kill-session -t"
 
 # trash
-alias rm="trash-put" rt="trash-restore"
+alias rm="trash-put" rt="trash-restore" re="trash-empty"
 
 # 杂七杂八
 alias h="tldr"
