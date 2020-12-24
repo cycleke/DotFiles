@@ -34,8 +34,6 @@ zinit wait="1" lucid light-mode for \
 zinit light-mode for \
       blockf \
         zsh-users/zsh-completions \
-      as="program" atclone="rm -f ^(rgg|agv)" \
-        lilydjwg/search-and-view \
       src="etc/git-extras-completion.zsh" \
         tj/git-extras
 
@@ -94,6 +92,3 @@ case $THEME in
         zinit light romkatv/powerlevel10k
         ;;
 esac
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
