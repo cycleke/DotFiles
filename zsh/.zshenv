@@ -1,4 +1,6 @@
 export PATH=~/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:$HOME/.dotnet/tools:$HOME/bin:$HOME/.local/bin:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/bin
+NPM_PACKAGES="${HOME}/.npm-global"
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
