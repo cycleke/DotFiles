@@ -1,2 +1,5 @@
 show-icons: true
-rofi.theme: /usr/share/rofi/themes/gruvbox-dark-hard.rasi
+rofi.fuzzy: true
+rofi.font: SF Pro Display Regular 16
+rofi.show-icons: true
+rofi.theme: /usr/share/rofi/themes/Paper.rasi

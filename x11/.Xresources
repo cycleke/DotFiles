@@ -160,67 +160,15 @@ urxvt*color21:      #c3c3c3
 !*color7:      wht
 !*color15: 	   bwht
 
-! ------------------------------------------------------------------------------
-! ROFI Details
-! ------------------------------------------------------------------------------
-! rofi.modi: drun,window
-
-! rofi.fullscreen: true
-! rofi.color-enabled: true
-! rofi.color-window: argb:00141414, #00141414,         #abb2bf
-! rofi.color-normal: argb:f2141414, #c0cadf, argb:f2141414, argb:f2141414, #61afef
-! rofi.color-urgent: argb:00141414, #cc6666, argb:e54b5160, argb:00141414, #61afef
-! rofi.color-active: argb:f2141414, #65acff, argb:f2141414, argb:00141414, #61afef
-! rofi.font: San Francisco Display Regular 8
-! rofi.eh: 1
-rofi.separator-style: line
-! rofi.sidebar-mode: true
-! rofi.hide-scrollbar: true
-! rofi.lines: 15
-! rofi.width: 25
-! rofi.line-margin: 15
-! rofi.bw: 2
-! rofi.auto-select: false
-rofi.fuzzy: true
-! rofi.scroll-method: 1
-! rofi.window-format: {t}
-! rofi.columns: 2
-
-! rofi.fullscreen: false
-! rofi.separator-style: dash
-! rofi.hide-scrollbar: true
-! rofi.padding: 50
-! rofi.eh: 1
-! rofi.bw: 0
-! rofi.lines: 5
-! rofi.line-margin: 15
-! rofi.line-padding: 10
-!rofi.location: 4
-rofi.font: SF Pro Display Regular 8
-rofi.show-icons: true
-! rofi.levenshtein-sort: true
-! rofi.sidebar-mode: true
-! rofi.auto-select: true
-! rofi.columns: 1
-
-! Window		'background'	'border'	'separator'
-! rofi.color-window:	#E6141414,	#C6C6C6,	#cdcdcd
-
-! State			'bg',		'fg',		'altbg',	'hlbg',		'hlfg'
-! rofi.color-normal:	#00000000,	#a4a4a4,	#00000000,	#00000000,	#A56B5B
-! rofi.color-active:	#00000000,	#ffdfd6,	#00000000,	#00000000,	#ffdfd6
-! rofi.color-urgent:	#00000000,	#ffdfd6,	#00000000,	#00000000,	#ffdfd6
-
 !--------------------------------------------
 ! custom DPI
 !--------------------------------------------
-! Xft.dpi: 120
+Xft.dpi: 120
 Xft.autohint: false
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
 Xft.hinting: 	true
 Xft.antialias: 1
 Xft.rgba: rgb
-rofi.dpi: 120
 
 Xcursor.size: 16

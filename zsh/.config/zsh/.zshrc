@@ -40,6 +40,7 @@ zinit light-mode for \
 zinit wait="1" lucid for \
       OMZ::lib/clipboard.zsh \
       OMZ::lib/git.zsh \
+      OMZ::lib/history.zsh \
       OMZ::plugins/git/git.plugin.zsh \
       OMZ::plugins/sudo/sudo.plugin.zsh
 
