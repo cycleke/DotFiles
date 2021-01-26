@@ -28,7 +28,7 @@ export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS=@im=fcitx5
 export SDL_IM_MODULE=fcitx5
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+# export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 export PATH=~/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:$HOME/.dotnet/tools:$HOME/bin:$HOME/.local/bin:$HOME/.local/bin:$HOME/.npm-global/bin:$HOME/bin
 
 # Local Variables:

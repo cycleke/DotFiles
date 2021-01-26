@@ -2,4 +2,4 @@ show-icons: true
 rofi.fuzzy: true
 rofi.font: SF Pro Display Regular 16
 rofi.show-icons: true
-rofi.theme: /usr/share/rofi/themes/Paper.rasi
+rofi.theme: /home/cycleke/.local/share/rofi/themes/onedark.rasi

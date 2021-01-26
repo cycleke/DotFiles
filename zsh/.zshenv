@@ -19,8 +19,8 @@ export LDFLAGS="-L/usr/local/opt/libxml2/lib"
 export CPPFLAGS="-I/usr/local/opt/libxml2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 
-export CC='ccache gcc'
-export CXX='ccache g++'
+# export CC='ccache gcc'
+# export CXX='ccache g++'
 
 export DEFAULT_USER="cycleke"
 
