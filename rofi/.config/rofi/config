@@ -1,4 +1,5 @@
 show-icons: true
+rofi.dpi: 144
 rofi.fuzzy: true
 rofi.font: SF Pro Display Regular 16
 rofi.show-icons: true
