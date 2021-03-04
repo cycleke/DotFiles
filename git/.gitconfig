@@ -3,6 +3,7 @@
 	email = cycleke@gmail.com
 [core]
 	quotepath = false
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -13,6 +14,22 @@
 
 [pull]
 	ff = only
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	first-run = false
 [http]
 	proxy = socks5://127.0.0.1:7891
 [https]

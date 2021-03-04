@@ -16,18 +16,18 @@ window:
   multiplier: 3
 font:
   normal:
-    family: FiraCode QiHei NF
+    family: Sarasa Mono SC Nerd
     style: Regular
   bold:
-    family: FiraCode QiHei NF
+    family: Sarasa Mono SC Nerd
     style: Bold
   italic:
-    family: FiraCode QiHei NF
+    family: Sarasa Mono SC Nerd
     style: Italic
   bold_italic:
-    family: FiraCode QiHei NF
+    family: Sarasa Mono SC Nerd
     style: Bold Italic
-  size: 11
+  size: 10
   use_thin_strokes: true
 draw_bold_text_with_bright_colors: true
 colors:

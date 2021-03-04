@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/cycleke/MyCode/LearnHaskell/.stack-work/install/x86_64-linux-tinfo6/10c051d3ff335db1906cfd596cd5c7a23f60c4fc056eeb3e717da32db5f0f172/8.10.3/lib/x86_64-linux-ghc-8.10.3/LearnHaskell-0.1.0.0-FTx8o62mGPYG9TxdFk4meD'
+let g:netrw_dirhist_5='/home/cycleke/MyCode/LearnHaskell/.stack-work/install/x86_64-linux-tinfo6/10c051d3ff335db1906cfd596cd5c7a23f60c4fc056eeb3e717da32db5f0f172/8.10.3/lib/x86_64-linux-ghc-8.10.3'
+let g:netrw_dirhist_4='/home/cycleke/MyCode/LearnHaskell/.stack-work/install/x86_64-linux-tinfo6/10c051d3ff335db1906cfd596cd5c7a23f60c4fc056eeb3e717da32db5f0f172/8.10.3/lib'
+let g:netrw_dirhist_3='/home/cycleke/MyCode/LearnHaskell/.stack-work/install/x86_64-linux-tinfo6/10c051d3ff335db1906cfd596cd5c7a23f60c4fc056eeb3e717da32db5f0f172/8.10.3'
+let g:netrw_dirhist_2='/home/cycleke/SoftWares/td/CMake'
+let g:netrw_dirhist_1='/home/cycleke/.config/zsh/.zinit'

@@ -1,6 +1,7 @@
+rofi.theme: /home/cycleke/.local/share/rofi/themes/cloud.rasi
+
 show-icons: true
 rofi.dpi: 144
 rofi.fuzzy: true
-rofi.font: SF Pro Display Regular 16
+rofi.font: SF Pro Display Regular 14
 rofi.show-icons: true
-rofi.theme: /home/cycleke/.local/share/rofi/themes/onedark.rasi

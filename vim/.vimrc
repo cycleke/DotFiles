@@ -1,64 +1,74 @@
-syntax enable
-set syntax=on
-set nobackup
-set noswapfile
-set noundofile
-set nu
-set smartindent
-set cindent
-set foldmethod=marker
-set foldlevel=3
-set foldenable
-set autowrite
-set noeb
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+""" Coloring
+syntax on
+colorscheme parchment
+highlight Pmenu guibg=white guifg=black gui=bold
+highlight Comment gui=bold
+if has("nvim")
+   highlight Normal gui=none
+   highlight NonText guibg=none
+endif
 
-" let iterm_profile = $ITERM_PROFILE
-" if iterm_profile == "Dark"
-"     set background=dark
-" else
-"     set background=light        " Set solarized background color
-" endif
-" colorscheme solarized
+" Opaque Background (Comment out to use terminal's profile)
+set termguicolors
 
-:imap jk <Esc>
+" Transparent Background (For i3 and compton)
+highlight Normal guibg=NONE ctermbg=NONE
+highlight LineNr guibg=NONE ctermbg=NONE
 
-map <F5> : call Complie() <CR>
+filetype plugin indent on
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab autoindent
+set incsearch ignorecase smartcase hlsearch
+set ruler laststatus=2 showcmd showmode
+set list listchars=trail:»,tab:»-
+set fillchars+=vert:\
 
-func Complie()
-	exec "w"
-	exec "!g++ % -o %< -g -Wall -std=c++11"
-endfunc
+set foldmethod=marker foldlevel=3 foldenable
+set nobackup noswapfile noundofile autowrite noerrorbells
+set wrap breakindent encoding=utf-8 number title cursorline
+set guioptions-=T guioptions-=m guioptions-=r guioptions-=egrL
 
-map <F6> : call Run() <CR>
+" HTML, XML, Jinja
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType htmldjango inoremap {{ {{  }}<left><left><left>
+autocmd FileType htmldjango inoremap {% {%  %}<left><left><left>
+autocmd FileType htmldjango inoremap {# {#  #}<left><left><left>
 
-func Run()
-	exec "!./%<"
-endfunc
+" Markdown and Journal
+autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType journal setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
-map <F9> : call DeBug() <CR>
+autocmd filetype python nnoremap <F5> :w <bar> exec '!python '.shellescape('%')<CR>
+autocmd filetype c nnoremap <F5> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' -std=c11 -Wall && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' -std=c++17 -Wall && ./'.shellescape('%:r')<CR>
+autocmd filetype java nnoremap <F5> :w <bar> exec '!javac -encoding UTF-8 -sourcepath . -d . '.shellescape('%').' && java '.shellescape('%:r')<CR>
 
-func DeBug()
-	exec "!gdb %<"
-endfunc
+autocmd filetype c nnoremap <F6> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' -std=c11 -Wall -g && gdb '.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <F6> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' -std=c++17 -Wall -g && gdb '.shellescape('%:r')<CR>
 
-set guioptions-=T
-set guioptions-=m
-set guioptions-=r
-set guioptions-=egrL
-set cursorline
-:nn <M-1> 1gt
-:nn <M-2> 2gt
-:nn <M-3> 3gt
-:nn <M-4> 4gt
-:nn <M-5> 5gt
-:nn <M-6> 6gt
-:nn <M-7> 7gt
-:nn <M-8> 8gt
-:nn <M-9> 9gt
-:nn <M-t> :tabnew<CR>
-:nn <M-w> :close<CR>
-:nn <C-Tab> :tabnext<CR>
+
+" Trim Whitespaces
+function! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\\\@<!\s\+$//e
+    call winrestview(l:save)
+endfunction
+
+imap jk <Esc>
+nmap t :call TrimWhitespace()<CR>
+
+nmap <M-1> 1gt
+nmap <M-2> 2gt
+nmap <M-3> 3gt
+nmap <M-4> 4gt
+nmap <M-5> 5gt
+nmap <M-6> 6gt
+nmap <M-7> 7gt
+nmap <M-8> 8gt
+nmap <M-9> 9gt
+nmap <M-t> :tabnew<CR>
+nmap <M-w> :close<CR>
+nmap <Tab> :tabnext<CR>
+nmap <S-Tab> :tabprevious<CR>

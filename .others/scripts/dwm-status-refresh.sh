@@ -11,7 +11,7 @@ print_temp(){
 }
 
 print_date(){
-	date '+%Y年%m月%d日 %H:%M:%S'
+	date '+%Y年%m月%d日 周%a %H:%M:%S'
 }
 
 LOC=$(readlink -f "$0")
@@ -33,6 +33,6 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_ccurse.sh"
 #. "$DIR/dwmbar-functions/dwm_date.sh"
 
-xsetroot -name "💿$(print_mem)M $(dwm_alsa) $(print_temp) [$(dwm_battery)] $(print_date)"
+xsetroot -name "💿$(print_mem)M $(dwm_alsa) [$(dwm_battery)] $(print_date)"
 
 exit 0

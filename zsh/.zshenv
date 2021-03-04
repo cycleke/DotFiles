@@ -22,6 +22,9 @@ export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig"
 # export CC='ccache gcc'
 # export CXX='ccache g++'
 
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+
 export DEFAULT_USER="cycleke"
 
 # Local Variables:
