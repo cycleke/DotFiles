@@ -19,4 +19,5 @@ alias ra="ranger"
 alias rgc='rg --color=always'
 alias ec="emacsclient -c -a \"\""
 alias et="emacsclient -t -a \"\""
+alias pa='curl -F "c=@-" "http://fars.ee/" < '
 alias hdu='du -sk -- * | sort -n | perl -pe '\''@SI=qw(K M G T P); s:^(\d+?)((\d\d\d)*)\s:$1." ".$SI[((length $2)/3)]."\t":e'\'''
