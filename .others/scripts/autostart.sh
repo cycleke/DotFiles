@@ -14,7 +14,7 @@ xfce4-power-manager &
 picom -b --config ~/.picom.conf &
 fcitx5 &
 nm-applet &
-qv2ray &
+clash &
 dunst &
 nohup /usr/bin/nutstore >/dev/null 2>&1 &
 xss-lock ~/scripts/lock.sh &
