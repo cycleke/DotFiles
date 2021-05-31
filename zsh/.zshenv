@@ -2,8 +2,8 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=$PATH:/usr/local/dotnet:$HOME/.dotnet/tools
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 
-export JAVA_HOME=/usr/lib/jvm/default/
-export HADOOP_HOME=$HOME/Applications/hadoop-3.3.0/
+export JAVA_HOME=/usr/lib/jvm/default
+export HADOOP_HOME=$HOME/Applications/hadoop-3.3.0
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 

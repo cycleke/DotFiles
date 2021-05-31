@@ -163,12 +163,12 @@ urxvt*color21:      #c3c3c3
 !--------------------------------------------
 ! custom DPI
 !--------------------------------------------
-Xft.dpi: 144
-Xft.autohint: false
+Xft.dpi:        100
+Xft.autohint:   false
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintslight
-Xft.hinting: 	true
-Xft.antialias: 1
-Xft.rgba: rgb
+Xft.hinting:    true
+Xft.antialias:  1
+Xft.rgba:       rgb
 
-Xcursor.size: 16
+Xcursor.size: 10

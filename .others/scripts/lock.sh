@@ -8,31 +8,31 @@ W='#880000bb' # wrong
 V='#bb00bbbb' # verifying
 
 i3lock \
-	--insidevercolor=$C \
-	--ringvercolor=$V \
-	--insidewrongcolor=$C \
-	--ringwrongcolor=$W \
-	--insidecolor=$B \
-	--ringcolor=$D \
-	--linecolor=$B \
-	--separatorcolor=$D \
-	--verifcolor=$T \
-	--wrongcolor=$T \
-	--timecolor=$T \
-	--datecolor=$T \
-	--layoutcolor=$T \
-	--keyhlcolor=$W \
-	--bshlcolor=$W \
+	--insidever-color=$C \
+	--ringver-color=$V \
+	\
+	--insidewrong-color=$C \
+	--ringwrong-color=$W \
+	\
+	--inside-color=$B \
+	--ring-color=$D \
+	--line-color=$B \
+	--separator-color=$D \
+	\
+	--verif-color=$T \
+	--wrong-color=$T \
+	--time-color=$T \
+	--date-color=$T \
+	--layout-color=$T \
+	--keyhl-color=$W \
+	--bshl-color=$W \
+	\
 	--screen 1 \
 	--blur 5 \
 	--clock \
 	--indicator \
-	--timestr="%H:%M:%S" \
-	--datestr="%A, %m %Y" \
-	--keylayout 2 \
-	--veriftext="Drinking verification can..." \
-	--wrongtext="Nope!" \
-	--modsize=10 &
-
-# xset dpms force off &
-# etc
+	--time-str="%H:%M:%S" \
+	--date-str="%A, %m %Y" \
+	--keylayout 1 \
+	--verif-text="Drinking verification can..." \
+	--wrong-text="Nope!"
