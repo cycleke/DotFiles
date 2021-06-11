@@ -2,7 +2,8 @@
 
 print_mem(){
 	memfree=$(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
-	echo -e "$memfree"
+	swapfree=$(($(grep -m1 'SwapFree:' /proc/meminfo | awk '{print $2}') / 1024))
+  echo -e "${memfree}M | ${swapfree}M"
 }
 
 print_temp(){
@@ -33,6 +34,6 @@ export IDENTIFIER="unicode"
 #. "$DIR/dwmbar-functions/dwm_ccurse.sh"
 #. "$DIR/dwmbar-functions/dwm_date.sh"
 
-xsetroot -name "💿$(print_mem)M $(dwm_alsa) [$(dwm_battery), $(dwm_backlight)] $(print_date)"
+xsetroot -name "💿$(print_mem) $(dwm_alsa) [$(dwm_battery), $(dwm_backlight)] $(print_date)"
 
 exit 0
